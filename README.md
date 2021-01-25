@@ -33,6 +33,3 @@ Alternatively, you can use Powercord's Quick CSS editor. Just copy the contents 
 # Screenshots
 
 soonTM
-
-# Note
-- If you have any issues, concerns, etc, feel free to contact `sardonicism-04#1184` on Discord
