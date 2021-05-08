@@ -41,6 +41,8 @@
     --background-modifier-active: #33415e49;
     --background-modifier-selected: #33415e5d;
 
+    --activity-card-background: var(--background-tertiary);
+
     /* Ayu theme-specific vars */
     --ayu-positive: #a6cc70;
     --ayu-negative: #f27983;
