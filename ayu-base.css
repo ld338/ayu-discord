@@ -75,7 +75,7 @@ html.theme-light::before {
     border-color: var(--ayu-menu-red) !important;
 }
 
-div[class*=popout] > div[class*=colorHeaderSecondary] + div[class*=row]:hover,
+div[class*=popout] > div[class*=row][role=button]:hover,
 [class*="colorDefault"]:hover,
 [class*="colorDefault"]:active:not([class*=hideInteraction]),
 [class*="colorDefault"][class*="focused"] {
