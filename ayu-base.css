@@ -75,6 +75,7 @@ html.theme-light::before {
     border-color: var(--ayu-menu-red) !important;
 }
 
+div[class*=popout] > div[class*=colorHeaderSecondary] + div[class*=row]:hover,
 [class*="colorDefault"]:hover,
 [class*="colorDefault"]:active:not([class*=hideInteraction]),
 [class*="colorDefault"][class*="focused"] {
@@ -317,8 +318,8 @@ input[class*=input]:focus {
 [aria-label="Home"][class*="wrapper"][class*="selected"] [class*="childWrapper"],
 [class*="radioGroup"] [class*="cardPrimaryEditable"][style*="rgb(114, 137, 218)"],
 [class*="valueChecked"],
-button[class*="lookFilled"][class*="colorBrand"] { 
-    background-color: var(--ayu-button-default) !important; 
+button[class*="lookFilled"][class*="colorBrand"] {
+    background-color: var(--ayu-button-default) !important;
 }
 
 div[class*="barFill"] {
@@ -326,32 +327,32 @@ div[class*="barFill"] {
 }
 
 [class*="valueUnchecked"] {
-     background-color: var(--background-accent) !important; 
+     background-color: var(--background-accent) !important;
 }
 
 button[class*="lookFilled"][class*="colorGreen"],
 button[class*="lookInverted"][class*="colorGreen"]  {
     background-color: var(--ayu-button-positive) !important;
-    color: white; 
-}
-
-button[class*="lookInverted"][class*="colorBrand"] { 
-    background-color: var(--ayu-button-default) !important; 
     color: white;
 }
 
-button[class*="lookFilled"][class*="colorRed"] { 
+button[class*="lookInverted"][class*="colorBrand"] {
+    background-color: var(--ayu-button-default) !important;
+    color: white;
+}
+
+button[class*="lookFilled"][class*="colorRed"] {
     background-color: var(--ayu-button-negative) !important;
 }
 
 button[class*="lookFilled"][class*="colorGrey"],
-button[class*="lookFilled"][class*="colorPrimary"] { 
-    background-color: var(--background-accent) !important; 
+button[class*="lookFilled"][class*="colorPrimary"] {
+    background-color: var(--background-accent) !important;
 }
 
 [class*="notificationSettings"] label:not([class*="disabled"]):hover,
-[class*="notificationSettings"] label[class*="selected"] { 
-    background-color: var(--ayu-default) !important; 
+[class*="notificationSettings"] label[class*="selected"] {
+    background-color: var(--ayu-default) !important;
 }
 
 [class*=streamPreview] > button[class*=cta] {
@@ -362,8 +363,8 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 /* SECTION: Small user popout */
 [class*="userPopout"] > [class*="body"],
-[class*="userPopout"] [class*="footer"] { 
-    background-color: var(--background-floating) !important; 
+[class*="userPopout"] [class*="footer"] {
+    background-color: var(--background-floating) !important;
 }
 
 [role=option][class*=role],
@@ -436,19 +437,19 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     background-color: var(--ayu-positive) !important;
     color: white !important;
 }
-[class*="guildSeparator"] { 
-    background-color: var(--background-accent) !important; 
+[class*="guildSeparator"] {
+    background-color: var(--background-accent) !important;
 }
-[aria-label="Home"] [class*="childWrapper"] { 
-    background-color: var(--background-accent) !important; 
+[aria-label="Home"] [class*="childWrapper"] {
+    background-color: var(--background-accent) !important;
 }
 
 [class*="tooltipBlack"],
-[class*="tooltipGrey"] { 
-    background-color: var(--background-tertiary) !important; 
+[class*="tooltipGrey"] {
+    background-color: var(--background-tertiary) !important;
 }
-[class*="tooltip"] [class*="tooltipPointer"] { 
-    border-top-color: var(--background-tertiary) !important; 
+[class*="tooltip"] [class*="tooltipPointer"] {
+    border-top-color: var(--background-tertiary) !important;
 }
 
 /* END SECTION: Server list */
@@ -531,21 +532,21 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
 
 /* SECTION: Friends list */
 
-[class*="peopleColumn"] { 
-    background-color: var(--background-primary) !important; 
+[class*="peopleColumn"] {
+    background-color: var(--background-primary) !important;
 }
 
-[aria-label="Add Friend"][class*="item"][role="button"] { 
-    background-color: var(--ayu-positive) !important; 
+[aria-label="Add Friend"][class*="item"][role="button"] {
+    background-color: var(--ayu-positive) !important;
 }
 
 [class*="itemCard"][class*="interactive"]:hover,
-[class*="itemCard"][class*="interactive"] [class*="inset"] section[class*="section"] { 
-    background-color: var(--background-tertiary) !important; 
+[class*="itemCard"][class*="interactive"] [class*="inset"] section[class*="section"] {
+    background-color: var(--background-tertiary) !important;
 }
 
-[role="dialog"] > [class*="popout"] > [style] { 
-    background-color: var(--background-floating) !important; 
+[role="dialog"] > [class*="popout"] > [style] {
+    background-color: var(--background-floating) !important;
 }
 
 /* END SECTION: Friends list */
@@ -645,7 +646,7 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
     padding: 4px;
 }
 
-div[class*=sidebar] > section[class*=panels] > [class*=container] > [class*=avatarWrapper] { 
+div[class*=sidebar] > section[class*=panels] > [class*=container] > [class*=avatarWrapper] {
     position: fixed;
     bottom: 16px;
     z-index: 1;
