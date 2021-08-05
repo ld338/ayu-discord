@@ -196,7 +196,7 @@ input[class*="emojiInput"] {
 
 /* Confirmation region */
 [class*=noticeRegion] [class*=elevationHigh] {
-    background-color: var(--background-floating);
+    background-color: var(--background-floating) !important;
 }
 
 /* Game invites */
