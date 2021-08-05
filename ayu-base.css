@@ -22,7 +22,7 @@ html.theme-light::before {
 .hljs-regexp,
 .hljs-string,
 .hljs-addition {
-    color: var(--ayu-hljs-string) !important;
+    color: var(--ayu-hljs-string);
 }
 
 .hljs-meta,
@@ -31,31 +31,31 @@ html.theme-light::before {
 .hljs-keyword,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-    color: var(--ayu-hljs-kw) !important;
+    color: var(--ayu-hljs-kw);
 }
 
 .hljs-selector-class,
 .hljs-symbol,
 .hljs-title,
 .hljs-type {
-    color: var(--ayu-hljs-title) !important;
+    color: var(--ayu-hljs-title);
 }
 
 .hljs-built_in {
-    color: var(--ayu-hljs-special) !important;
+    color: var(--ayu-hljs-special);
 }
 .hljs-section,
 .hljs-attribute,
 .hljs-name,
 .hljs-selector-tag {
-    color: var(--ayu-hljs-attr) !important;
+    color: var(--ayu-hljs-attr);
 }
 .hljs-variable {
-    color: var(--ayu-hljs-variable) !important;
+    color: var(--ayu-hljs-variable);
 }
 
 .hljs-deletion {
-    color: var(--ayu-negative) !important;
+    color: var(--ayu-negative);
 }
 
 /* END SECTION: hljs customisation */
@@ -63,8 +63,8 @@ html.theme-light::before {
 /* SECTION: Menu */
 
 [class*="colorDanger"]:not(:hover):not(:active) {
-    color: var(--ayu-menu-red) !important;
-    background-color: transparent !important;
+    color: var(--ayu-menu-red);
+    background-color: transparent;
 }
 
 [class*="colorDanger"]:hover,
@@ -72,7 +72,7 @@ html.theme-light::before {
 [class*="colorDanger"]:active [class*="colorDefault"],
 [class*="colorDanger"]:active {
     background-color: var(--ayu-menu-red) !important;
-    border-color: var(--ayu-menu-red) !important;
+    border-color: var(--ayu-menu-red);
 }
 
 div[class*=popout] > div[class*=row][role=button]:hover,
@@ -83,7 +83,7 @@ div[class*=popout] > div[class*=row][role=button]:hover,
 }
 
 [id*="message-quickreact"] [class*="button"] {
-    border-radius: var(--ayu-border-radius) !important;
+    border-radius: var(--ayu-border-radius);
 }
 
 /* END SECTION: Menu */
@@ -94,19 +94,15 @@ div[class*=popout] > div[class*=row][role=button]:hover,
     height: 7.5px;
 }
 
-[class*=markup] code::-webkit-scrollbar-thumb {
-    background-color: var(--background-accent)!important;
-}
-
 /* Porple notifs www */
 div[class*=numberBadge],
 div[class*=unreadBar] {
-    background-color: var(--ayu-notification-colour)!important;
+    background-color: var(--ayu-notification-colour) !important;
 }
 
 /* Mic Test thing */
 [class*="micTest"] [class*="container"] {
-    border-radius: var(--ayu-border-radius) !important;
+    border-radius: var(--ayu-border-radius);
 }
 
 [class*="micTest"] [class*="container"] [class*="notches"] {
@@ -114,7 +110,7 @@ div[class*=unreadBar] {
 }
 
 [class*="micTest"] [class*="container"] [class*="progress"] {
-    background-color: var(--background-secondary) !important;
+    background-color: var(--background-secondary);
 }
 
 /* Bot tag customisation */
@@ -130,35 +126,35 @@ div[class*=unreadBar] {
 [class*="card"][class*="bannedUser"]::before,
 [class*="card"][class*="InviteRow"]::before,
 [class*="card"][class*="emojiRow"]::before {
-    background-color: var(--background-secondary) !important;
-    border: none !important;
+    background-color: var(--background-secondary);
+    border: none;
 }
 
 
 input[class*="emojiInput"] {
-    background-color: var(--background-secondary-alt) !important;
+    background-color: var(--background-secondary-alt);
 }
 
 /* Roles adding menu */
 [role="dialog"][aria-label^="Add Role"] [class*="header"] {
-    background-color: var(--background-secondary) !important;
+    background-color: var(--background-secondary);
 }
 [role="dialog"][aria-label^="Add Role"] [class*="sectionTag"] {
-    background-color: var(--background-floating) !important;
+    background-color: var(--background-floating);
 }
 
 /* Audit log filters */
 [class*="FilterPopout"] {
     background-color: var(--background-floating) !important;
 }
-[class*="FilterPopout"] > [class*="scroller"] > [class*="selected"] {
+[class*="content"] > [class*="selectedBrand"] {
     background-color: var(--ayu-default) !important;
 }
 
 /* Search thingy */
 [id*="search-results"] [class*="queryContainer"][class*="focused"],
 [id*="search-results"][class*="container"] {
-    background-color: var(--background-floating) !important;
+    background-color: var(--background-floating);
 }
 
 [id*="search-results"][class*="option"]::after {
@@ -171,7 +167,7 @@ input[class*="emojiInput"] {
 
 [class*=searchFilter],
 [class*=searchAnswer] {
-    background-color: var(--background-accent) !important;
+    background-color: var(--background-accent);
 }
 
 /* Stream controls and stuff */
@@ -187,7 +183,7 @@ input[class*="emojiInput"] {
 
 /* Quick switcher */
 [class*="quickswitcher"] > [class*="input"] {
-    background-color: var(--background-secondary-alt) !important;
+    background-color: var(--background-secondary-alt);
 }
 
 [class*="formNotice"],
@@ -197,21 +193,17 @@ input[class*="emojiInput"] {
     background-color: var(--background-floating) !important;
 }
 
-/* Little keyboard button things */
-[class*="keybindShortcut"] span {
-    background-color: var(--background-accent) !important;
-}
 
 /* Confirmation region */
 [class*=noticeRegion] [class*=elevationHigh] {
-    background-color: var(--background-floating) !important;
+    background-color: var(--background-floating);
 }
 
 /* Game invites */
 [class^=preview][class^=invite],
 [class^=message] [class^=invite] {
     background-color: var(--background-secondary);
-    border-color: var(--background-secondary-alt) !important;
+    border-color: var(--background-secondary-alt);
 }
 
 /* Replies */
@@ -304,7 +296,7 @@ div[class*=giftCodeContainer] > div[class*=tile]:hover {
 /* Border color for focused input boxes */
 textarea[class*=input]:focus,
 input[class*=input]:focus {
-    border-color: var(--ayu-notification-colour) !important;
+    border-color: var(--ayu-notification-colour);
 }
 
 /* END SECTION: Misc. tweaks */
@@ -312,7 +304,7 @@ input[class*=input]:focus {
 /* SECTION: Buttons */
 
 [class*="slider"] > div[class*="bar"] {
-    background-color: var(--background-floating) !important;
+    background-color: var(--background-floating);
 }
 
 [aria-label="Home"][class*="wrapper"][class*="selected"] [class*="childWrapper"],
@@ -323,11 +315,11 @@ button[class*="lookFilled"][class*="colorBrand"] {
 }
 
 div[class*="barFill"] {
-    background-color: var(--ayu-notification-colour) !important;
+    background-color: var(--ayu-notification-colour);
 }
 
 [class*="valueUnchecked"] {
-     background-color: var(--background-accent) !important;
+     background-color: var(--background-accent);
 }
 
 button[class*="lookFilled"][class*="colorGreen"],
@@ -348,11 +340,6 @@ button[class*="lookFilled"][class*="colorRed"] {
 button[class*="lookFilled"][class*="colorGrey"],
 button[class*="lookFilled"][class*="colorPrimary"] {
     background-color: var(--background-accent) !important;
-}
-
-[class*="notificationSettings"] label:not([class*="disabled"]):hover,
-[class*="notificationSettings"] label[class*="selected"] {
-    background-color: var(--ayu-default) !important;
 }
 
 [class*=streamPreview] > button[class*=cta] {
@@ -400,12 +387,8 @@ button[class*="lookFilled"][class*="colorPrimary"] {
     z-index: -1;
 }
 
-[role=option][class*=role]:not(button):hover {
-    border-color: var(--ayu-negative)!important;
-}
-
 [role=option][class*=role]:not(button):hover [class*=roleCircle] {
-    background-color: var(--ayu-negative)!important;
+    background-color: var(--ayu-negative) !important;
 }
 
 [role=option][class*=role]:not(button):hover [class*=roleRemoveIcon] {
@@ -423,7 +406,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 [class*="messagesErrorBar"] { background-color: var(--ayu-negative) !important; }
 [class*="newMessagesBar"] {
-    background-color: var(--ayu-default) !important;
+    background-color: var(--ayu-default);
     opacity: 0.75;
     z-index: 20;
 }
@@ -435,22 +418,14 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 [class*="circleIconButton"] { color: var(--ayu-positive); }
 [class*="circleIconButton"][class*="selected"],
 [class*="circleIconButton"]:hover {
-    background-color: var(--ayu-positive) !important;
-    color: white !important;
+    background-color: var(--ayu-positive);
+    color: white;
 }
 [class*="guildSeparator"] {
-    background-color: var(--background-accent) !important;
+    background-color: var(--background-accent);
 }
 [aria-label="Home"] [class*="childWrapper"] {
-    background-color: var(--background-accent) !important;
-}
-
-[class*="tooltipBlack"],
-[class*="tooltipGrey"] {
-    background-color: var(--background-tertiary) !important;
-}
-[class*="tooltip"] [class*="tooltipPointer"] {
-    border-top-color: var(--background-tertiary) !important;
+    background-color: var(--background-accent);
 }
 
 /* END SECTION: Server list */
@@ -518,7 +493,7 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
 }
 
 [class*=flowerStar] > path {
-    fill: var(--background-accent)!important;
+    fill: var(--background-accent);
 }
 
 [class*=additionalActionsIcon] {
@@ -534,20 +509,7 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
 /* SECTION: Friends list */
 
 [class*="peopleColumn"] {
-    background-color: var(--background-primary) !important;
-}
-
-[aria-label="Add Friend"][class*="item"][role="button"] {
-    background-color: var(--ayu-positive) !important;
-}
-
-[class*="itemCard"][class*="interactive"]:hover,
-[class*="itemCard"][class*="interactive"] [class*="inset"] section[class*="section"] {
-    background-color: var(--background-tertiary) !important;
-}
-
-[role="dialog"] > [class*="popout"] > [style] {
-    background-color: var(--background-floating) !important;
+    background-color: var(--background-primary);
 }
 
 /* END SECTION: Friends list */
@@ -577,7 +539,7 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
 }
 
 [role="dialog"] [class^="message"]:not([class^=replied]) {
-    background-color: var(--background-primary) !important;
+    background-color: var(--background-primary);
 }
 
 [class*="menu"],
@@ -590,15 +552,10 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
     background-color: var(--background-secondary);
 }
 
-
 [class*="root"][class*="small"] a {
     color: var(--text-link);
 }
 
-[class*=regionSelectModal] > div > [class*=regionSelectModalOption] {
-    background-color: var(--background-secondary) !important;
-    border-color: var(--background-secondary-alt) !important;
-}
 
 /* END SECTION: Modals */
 
@@ -613,10 +570,10 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
 /* SECTION: Emoji and mention suggestions */
 
 [class*="autocompleteInner"] {
-    background-color: var(--background-floating) !important;
+    background-color: var(--background-floating);
 }
 [class*="autocomplete"] [class*="selected"] {
-    background-color: var(--background-secondary) !important;
+    background-color: var(--background-secondary);
 }
 
 /* END SECTION: Suggestions */
@@ -624,11 +581,11 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
 /* SECTION: Nitro Boost Page */
 
 [class*="perksModal"] {
-    background-color: var(--background-primary) !important;
+    background-color: var(--background-primary);
 }
 [class*="perksModal"] [class*="tierMarkerContainer"] [class*="tierMarkerBackground"],
 [class*="perksModal"] [class^="perks"] > [class^="perk"] {
-    background-color: var(--background-floating) !important;
+    background-color: var(--background-floating);
 }
 
 [class*="tierBody"] {
@@ -717,3 +674,4 @@ div[class^=customStatus][class*=statusItem] {
 }
 
 /* END SECTION: User Thingy on bottom left */
+
