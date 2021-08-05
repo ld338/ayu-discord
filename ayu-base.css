@@ -22,7 +22,7 @@ html.theme-light::before {
 .hljs-regexp,
 .hljs-string,
 .hljs-addition {
-    color: var(--ayu-hljs-string);
+    color: var(--ayu-hljs-string) !important;
 }
 
 .hljs-meta,
@@ -31,31 +31,31 @@ html.theme-light::before {
 .hljs-keyword,
 .hljs-selector-attr,
 .hljs-selector-pseudo {
-    color: var(--ayu-hljs-kw);
+    color: var(--ayu-hljs-kw) !important;
 }
 
 .hljs-selector-class,
 .hljs-symbol,
 .hljs-title,
 .hljs-type {
-    color: var(--ayu-hljs-title);
+    color: var(--ayu-hljs-title) !important;
 }
 
 .hljs-built_in {
-    color: var(--ayu-hljs-special);
+    color: var(--ayu-hljs-special) !important;
 }
 .hljs-section,
 .hljs-attribute,
 .hljs-name,
 .hljs-selector-tag {
-    color: var(--ayu-hljs-attr);
+    color: var(--ayu-hljs-attr) !important;
 }
 .hljs-variable {
-    color: var(--ayu-hljs-variable);
+    color: var(--ayu-hljs-variable) !important;
 }
 
 .hljs-deletion {
-    color: var(--ayu-negative);
+    color: var(--ayu-negative) !important;
 }
 
 /* END SECTION: hljs customisation */
