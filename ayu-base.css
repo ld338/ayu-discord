@@ -299,6 +299,11 @@ input[class*=input]:focus {
     border-color: var(--ayu-notification-colour);
 }
 
+/* "Active Threads" modal */
+div[class*=focusLock] [class*=root] {
+    background-color: var(--background-floating);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
