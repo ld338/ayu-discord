@@ -304,6 +304,11 @@ div[class*=focusLock] [class*=root] {
     background-color: var(--background-floating);
 }
 
+/* "Active Now" sidebar */
+div[class*=nowPlayingColumn] div[class*=itemCard][class*=interactive]:hover {
+    background-color: var(--background-tertiary);
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
