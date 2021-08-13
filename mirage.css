@@ -13,25 +13,25 @@
 .theme-dark {
     /* Discord vars */
     --background-primary: #1f2430;
-    --background-secondary: #191E2A;
+    --background-secondary: #191e2a;
     --background-secondary-alt: #101521;
     --background-tertiary: #141925;
-    --background-accent: #33415E;
+    --background-accent: #33415e;
     --background-floating: #232834;
 
     --channeltextarea-background: var(--background-accent);
-    --channels-default: #CBCCC6;
+    --channels-default: #cbccc6;
 
     --text-muted: #707a8c;
-    --text-normal: #CBCCC6;
-    --text-link: #5CCFE6;
+    --text-normal: #cbccc6;
+    --text-link: #5ccfe6;
 
     --interactive-normal: #cbccc6;
     --interactive-hover: #cbccc6;
     --interactive-active: #fff;
     --interactive-muted: #707a8c;
 
-    --header-primary: #CBCCC6;
+    --header-primary: #cbccc6;
     --header-secondary: #c9c9c9;
 
     --background-mentioned: #a29bfe1c;
@@ -50,19 +50,19 @@
 
     --ayu-transition-duration: 0.25s;
 
-    --ayu-syntax-tag: #5CCFE6;
-    --ayu-syntax-func: #FFD580;
-    --ayu-syntax-entity: #73D0FF;
-    --ayu-syntax-string: #BAE67E;
-    --ayu-syntax-regexp: #95E6CB;
-    --ayu-syntax-markup: #F28779;
-    --ayu-syntax-keyword: #FFA759;
-    --ayu-syntax-special: #FFE6B3;
-    --ayu-syntax-comment: #5C6773;
-    --ayu-syntax-constant: #D4BFFF;
-    --ayu-syntax-operator: #F29E74;
-    --ayu-syntax-added: #A6CC70;
-    --ayu-syntax-removed: #F27983;
+    --ayu-syntax-tag: #5ccfe6;
+    --ayu-syntax-func: #ffd580;
+    --ayu-syntax-entity: #73d0ff;
+    --ayu-syntax-string: #bae67e;
+    --ayu-syntax-regexp: #95e6cb;
+    --ayu-syntax-markup: #f28779;
+    --ayu-syntax-keyword: #ffa759;
+    --ayu-syntax-special: #ffe6b3;
+    --ayu-syntax-comment: #5c6773;
+    --ayu-syntax-constant: #d4bfff;
+    --ayu-syntax-operator: #f29e74;
+    --ayu-syntax-added: #a6cc70;
+    --ayu-syntax-removed: #f27983;
 
     --ayu-menu-red: var(--ayu-negative);
     --ayu-menu-default: var(--ayu-default);
@@ -77,7 +77,7 @@
 
     --ayu-status-online: var(--ayu-positive);
     --ayu-status-dnd: var(--ayu-negative);
-    --ayu-status-idle: #FFA759;
+    --ayu-status-idle: #ffa759;
     --ayu-status-streaming: var(--ayu-presence-streaming);
     --ayu-status-offline: var(--background-primary);
 
@@ -101,4 +101,15 @@
     --scrollbar-thin-track: transparent;
 
     --ayu-notification-colour: #a29bfe;
+}
+
+html.theme-light::before {
+    content: "This theme is made to be used with Discord's dark theme. Please switch to that for the best experience.";
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: var(--ayu-negative);
+    text-align: center;
+    position: absolute;
+    z-index: 10001;
+    right: 0;
+    left: 0;
 }

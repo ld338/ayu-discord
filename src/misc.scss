@@ -1,18 +1,3 @@
-/*
-Theme base, generally just does colour stuff.
-*/
-
-html.theme-light::before {
-    content: "This theme is made to be used with Discord's dark theme. Please switch to that for the best experience.";
-    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: var(--ayu-negative);
-    text-align: center;
-    position: absolute;
-    z-index: 10001;
-    right: 0;
-    left: 0;
-}
-
 /* SECTION: Misc. tweaks */
 
 /* Tag customisation */
