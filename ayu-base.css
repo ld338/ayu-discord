@@ -212,7 +212,7 @@ input[class*="emojiInput"] {
 
 [class*=searchFilter],
 [class*=searchAnswer] {
-    background-color: var(--background-accent);
+    background-color: var(--background-accent) !important;
 }
 
 /* Stream controls and stuff */
@@ -361,6 +361,11 @@ div[class*=markDash] {
 
 div[class*=markValue] {
     color: var(--text-muted) !important;
+}
+
+/* Keybind icons */
+div[class*=keybindShortcut] span {
+    background-color: var(--background-accent) !important;
 }
 
 /* END SECTION: Misc. tweaks */
