@@ -396,6 +396,7 @@ div[class*=nowPlayingColumn] div[class*=itemCard][class*=interactive]:hover {
 [class*=searchFilter],
 [class*=searchAnswer] {
   background-color: var(--background-accent) !important;
+  color: var(--text-normal);
 }
 
 /* Calendar picker for search */
