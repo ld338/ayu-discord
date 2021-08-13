@@ -1,4 +1,4 @@
-# Ayu Mirage Discord
+# Ayu Discord
 
 A Discord theme using the beautiful [Ayu](https://github.com/ayu-theme/ayu-colors) color palettes.
 
