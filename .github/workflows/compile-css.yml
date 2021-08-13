@@ -23,7 +23,7 @@ jobs:
           outputStyle: expanded
           
       - name: Move compiled CSS to final location
-        run: mv /tmp/ayu-mirage-discord/css .
+        run: mv /tmp/ayu-mirage-discord/css/ayu.css css/ayu.css
       
       - name: Commit changes to main
         run: |
