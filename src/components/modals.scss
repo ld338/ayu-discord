@@ -1,0 +1,44 @@
+[class*="regionSelectModal"],
+[class*="overflowRolesPopout"]:not([class*="ArrowWrapper"]),
+[class*="colorPickerCustom"],
+[class*="streamPreviewWrapper"] [class*="streamPreview"],
+[class*="addGamePopout"],
+[class*="keyboardShortcutsModal"],
+[class*="uploadModal"],
+[class*="uploadModal"] > [class*="inner"],
+[role="dialog"] [class*="content"][class*="thin"][class*="scrollerBase"],
+[role="dialog"] [class*="header"][class*="horizontal"] {
+    background-color: var(--background-floating) !important;
+}
+
+[class*="root"][class*="small"],
+[class*="modalContents"] {
+    background-color: var(--background-floating);
+}
+
+[role="dialog"] [class*="footer"] {
+    background-color: var(--background-secondary);
+}
+
+[role="dialog"] [class^="message"]:not([class^="replied"]) {
+    background-color: var(--background-primary);
+}
+
+[class*="menu"],
+[role="dialog"] [class*="reactors"] {
+    background-color: var(--background-primary) !important;
+    border-color: var(--background-secondary-alt);
+}
+
+[role="dialog"] > div > [class*="thin"][class*="scroller"] {
+    background-color: var(--background-secondary);
+}
+
+[class*="root"][class*="small"] a {
+    color: var(--text-link);
+}
+
+/* Quick switcher */
+[class*="quickswitcher"] > [class*="input"] {
+    background-color: var(--background-secondary-alt);
+}

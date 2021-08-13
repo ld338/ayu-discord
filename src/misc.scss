@@ -1,0 +1,89 @@
+/*
+Theme base, generally just does colour stuff.
+*/
+
+html.theme-light::before {
+    content: "This theme is made to be used with Discord's dark theme. Please switch to that for the best experience.";
+    font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: var(--ayu-negative);
+    text-align: center;
+    position: absolute;
+    z-index: 10001;
+    right: 0;
+    left: 0;
+}
+
+/* SECTION: Misc. tweaks */
+
+/* Tag customisation */
+div[class*="betaBadge"],
+[class*="botTag"] {
+    background-color: var(--ayu-bot-tag-bg-colour) !important;
+    color: var(--ayu-bot-tag-fg-colour);
+    border-radius: var(--ayu-bot-tag-radius);
+}
+
+/* Audit log filters */
+[class*="FilterPopout"] {
+    background-color: var(--background-floating) !important;
+}
+[class*="content"] > [class*="selectedBrand"] {
+    background-color: var(--ayu-default) !important;
+}
+
+/* Stream controls and stuff */
+[class*="bottomControls"] [class*="colorable"][class*="primaryDark"] {
+    background-color: var(--background-accent);
+}
+
+/* Go Live window */
+[role="dialog"] [class*="modalSize"][class*="root"],
+[class*="segmentContainer"] [class*="segmentControl"] {
+    background-color: var(--background-floating);
+}
+
+/* Confirmation region */
+[class*="noticeRegion"] [class*="elevationHigh"] {
+    background-color: var(--background-floating) !important;
+}
+
+/* Nitro Gifts Tile */
+div[class*="giftCodeContainer"] > div[class*="tile"],
+div[class*="giftCodeContainer"] > div[class*="tile"]:hover {
+    background-color: var(--background-tertiary);
+}
+
+/* Voice Call stream watchers user hover */
+[class*="memberListItem"]:not([class*="popoutDisabled"]):hover {
+    background-color: var(--background-secondary) !important;
+}
+
+/* VC video loading background */
+[class*="videoWrapper"] {
+    background-color: var(--background-accent);
+}
+
+/* Border color for focused input boxes */
+textarea[class*="input"]:focus,
+input[class*="input"]:focus {
+    border-color: var(--ayu-notification-colour);
+}
+
+/* "Active Threads" modal */
+div[class*="focusLock"] [class*="root"] {
+    background-color: var(--background-floating);
+}
+
+/* Marks on sliders */
+div[class*="markDash"] {
+    background-color: var(--background-accent) !important;
+}
+
+div[class*="markValue"] {
+    color: var(--text-muted) !important;
+}
+
+/* Keybind icons */
+div[class*="keybindShortcut"] span {
+    background-color: var(--background-accent) !important;
+}

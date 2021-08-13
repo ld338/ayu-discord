@@ -1,0 +1,15 @@
+[class*="perksModal"] {
+    background-color: var(--background-primary);
+}
+[class*="perksModal"] [class*="tierMarkerContainer"] [class*="tierMarkerBackground"],
+[class*="perksModal"] [class^="perks"] > [class^="perk"] {
+    background-color: var(--background-floating);
+}
+
+[class*="tierBody"] {
+    background-color: var(--background-floating) !important;
+}
+[class*="tierHeaderLocked"],
+[class*="tierHeaderUnlocked"] {
+    background-color: var(--background-secondary) !important;
+}

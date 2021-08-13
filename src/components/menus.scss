@@ -1,0 +1,31 @@
+[class*="colorDanger"]:not(:hover):not(:active) {
+    color: var(--ayu-menu-red);
+    background-color: transparent;
+}
+
+[class*="colorDanger"]:hover,
+[class*="colorDanger"]:hover [class*="colorDefault"],
+[class*="colorDanger"]:active [class*="colorDefault"],
+[class*="colorDanger"]:active {
+    background-color: var(--ayu-menu-red) !important;
+    border-color: var(--ayu-menu-red);
+}
+
+div[class*="popout"] > div[class*="row"][role="button"]:hover,
+[class*="colorDefault"]:hover,
+[class*="colorDefault"]:active:not([class*="hideInteraction"]),
+[class*="colorDefault"][class*="focused"] {
+    background-color: var(--ayu-menu-default);
+}
+
+[id*="message-quickreact"] [class*="button"] {
+    border-radius: var(--ayu-border-radius);
+}
+
+/* Roles adding menu */
+[role="dialog"][aria-label^="Add Role"] [class*="header"] {
+    background-color: var(--background-secondary);
+}
+[role="dialog"][aria-label^="Add Role"] [class*="sectionTag"] {
+    background-color: var(--background-floating);
+}

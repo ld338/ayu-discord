@@ -1,0 +1,61 @@
+[class*="slider"] > div[class*="bar"] {
+    background-color: var(--background-accent);
+}
+
+div[class*="premiumTabItem"][class*="selected"],
+[aria-label="Home"][class*="wrapper"][class*="selected"] [class*="childWrapper"],
+[class*="radioGroup"] [class*="cardPrimaryEditable"][style*="rgb(114, 137, 218)"],
+[class*="valueChecked"],
+button[class*="lookFilled"][class*="colorBrand"]:not(button[class*="customSwatch"]) {
+    background-color: var(--ayu-button-default) !important;
+}
+
+div[class*="barFill"] {
+    background-color: var(--ayu-notification-colour);
+}
+
+[class*="valueUnchecked"] {
+    background-color: var(--background-accent);
+}
+
+button[class*="lookFilled"][class*="colorGreen"],
+button[class*="lookInverted"][class*="colorGreen"],
+div[aria-controls="ADD_FRIEND-tab"] {
+    background-color: var(--ayu-button-positive) !important;
+    color: white;
+}
+
+/* Toggle sliders */
+div[class*="control"] > div[class*="container"]:not([style*="* 4.6%"]) {
+    background-color: var(--ayu-button-positive) !important;
+}
+
+div[class*="control"] > div[class*="container"][style*="* 4.6%"] {
+    background-color: var(--background-accent) !important;
+}
+
+div[class*="container"]:not([style*="* 4.6%"]) > svg[class*="slider"] > svg > path {
+    fill: var(--ayu-button-positive) !important;
+}
+
+div[class*="container"][style*="* 4.6%"] > svg[class*="slider"] > svg > path {
+    fill: var(--background-accent) !important;
+}
+
+button[class*="lookInverted"][class*="colorBrand"] {
+    background-color: var(--ayu-button-default) !important;
+    color: white;
+}
+
+button[class*="lookFilled"][class*="colorRed"] {
+    background-color: var(--ayu-button-negative) !important;
+}
+
+button[class*="lookFilled"][class*="colorGrey"],
+button[class*="lookFilled"][class*="colorPrimary"] {
+    background-color: var(--background-accent) !important;
+}
+
+[class*="streamPreview"] > button[class*="cta"] {
+    background-color: var(--background-accent);
+}

@@ -1,0 +1,148 @@
+/* SERVER LIST */
+[class*="circleIconButton"] {
+    color: var(--ayu-positive);
+}
+[class*="circleIconButton"][class*="selected"],
+[class*="circleIconButton"]:hover {
+    background-color: var(--ayu-positive);
+    color: white;
+}
+[class*="guildSeparator"] {
+    background-color: var(--background-accent);
+}
+[aria-label="Home"] [class*="childWrapper"] {
+    background-color: var(--background-accent);
+}
+
+/* INFO BARS */
+[class*="messagesErrorBar"] {
+    background-color: var(--ayu-negative) !important;
+}
+[class*="newMessagesBar"] {
+    background-color: var(--ayu-default);
+    opacity: 0.75;
+    z-index: 20;
+}
+
+/* SEARCH */
+[id*="search-results"] [class*="queryContainer"][class*="focused"],
+[id*="search-results"][class*="container"] {
+    background-color: var(--background-floating);
+}
+
+[id*="search-results"][class*="option"]::after {
+    background: none !important;
+}
+
+[id*="search-results"][class*="option"][class*="selected"] {
+    background-color: var(--background-secondary);
+}
+
+[class*="searchFilter"],
+[class*="searchAnswer"] {
+    background-color: var(--background-accent) !important;
+}
+
+/* Calendar picker for search */
+div[class*="react-datepicker"] {
+    background-color: var(--background-floating) !important;
+}
+
+/* Porple notifs www */
+div[class*="numberBadge"],
+div[class*="unreadBar"],
+div[class*="unreadMentionsIndicatorTop"] > div[class*="unreadMentionsBar"] {
+    background-color: var(--ayu-notification-colour) !important;
+}
+
+/* Southwest user area */
+[class*="container"] [class*="avatarWrapper"] > [class*="avatar"][class*="wrapper"] {
+    padding: 4px;
+}
+
+div[class*="sidebar"] > section[class*="panels"] > [class*="container"] > [class*="avatarWrapper"] {
+    position: fixed;
+    bottom: 16px;
+    z-index: 1;
+    left: 13px;
+}
+
+[class*="animatorTop"] > [class*="styleFixed"] {
+    width: auto;
+    left: 50px;
+    bottom: -61.5px;
+    display: flex;
+    flex-direction: row;
+}
+
+[class*="customEmojiPlaceholder"] {
+    background-image: var(--ayu-edit-icon);
+}
+
+[class*="statusItem"] > div[class*="description"],
+[class*="statusItem"] > div[class*="status"],
+[class*="menu"][class*="styleFixed"] > div[class*="scroller"] > div[class*="separator"] {
+    display: none;
+}
+
+[class*="clearStatusIcon"] {
+    margin-left: 0;
+}
+
+nav[class*="guilds"] ul[class*="tree"] {
+    height: calc(100% - 160px);
+}
+
+[class*="container"] > [class*="flex"][style="flex: 0 1 auto;"] {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    bottom: 39px;
+    padding: 20px;
+    pointer-events: visible;
+}
+
+div[class^="customStatus"] > span[class*="customText"],
+div[class^="customStatus"] > img[class*="customEmoji"],
+section[class*="panels"] > div[class*="container"] > div[class*="nameTag"] {
+    display: none;
+}
+
+section[class*="panels"] > div[class*="container"] {
+    background-color: var(--background-secondary);
+    height: 0;
+}
+
+[class*="animatorTop"] > [class*="styleFixed"] > div[class*="scroller"] {
+    display: flex;
+    flex-direction: row;
+}
+
+div[class^="customStatus"][class*="statusItem"] {
+    grid-template-columns: none;
+}
+
+[class*="animatorTop"] > [class*="styleFixed"] > div[class*="scroller"] > [class*="item"] > [class*="statusItem"] {
+    grid-template-columns: none;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+/* Top toolbar stuff */
+div[class*="chat"] > [class*="content"]::before,
+nav[class*="container"] > div[class*="container"][class*="clickable"] > header[class*="header"] {
+    box-shadow: none;
+}
+
+div[class*="chat"] > section[class*="container"][class*="themed"] {
+    background-color: var(--background-secondary);
+}
+
+div[class*="toolbar"] > a[class*="anchor"] {
+    display: none;
+}
+
+div[class*="toolbar"] > div[class*="search"] {
+    order: 1;
+}

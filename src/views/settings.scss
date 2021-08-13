@@ -1,0 +1,29 @@
+/* Mic Test thing */
+[class*="micTest"] [class*="container"] {
+    border-radius: var(--ayu-border-radius);
+}
+
+[class*="micTest"] [class*="container"] [class*="notches"] {
+    display: none;
+}
+
+[class*="micTest"] [class*="container"] [class*="progress"] {
+    background-color: var(--background-secondary);
+}
+
+/* Settings hovering */
+[class*="card"][class*="member"]::before,
+[class*="card"][class*="game"]::before,
+[class*="card"][class*="bannedUser"]::before,
+[class*="card"][class*="InviteRow"]::before,
+[class*="card"][class*="emojiRow"]::before {
+    background-color: var(--background-secondary);
+    border: none;
+}
+
+[class*="formNotice"],
+[class*="notDetected"],
+[class*="userSettingsVoice"] [class*="previewOverlay"],
+[class*="codeRedemptionRedirect"] {
+    background-color: var(--background-floating) !important;
+}
