@@ -12,18 +12,18 @@ jobs:
         uses: actions/checkout@v2.3.4
 
       - name: Create temporary location for building
-        run: mkdir -vp /tmp/ayu-mirage-discord/css
+        run: mkdir -vp /tmp/ayu-discord/css
 
       - name: Compile CSS from SCSS src
         uses: gha-utilities/sass-build@v0.4.5
         with:
           source: ./src/main.scss
-          destination: /tmp/ayu-mirage-discord/css/ayu.css
+          destination: /tmp/ayu-discord/css/ayu.css
           sourceMap: false
           outputStyle: expanded
           
       - name: Move compiled CSS to final location
-        run: mv /tmp/ayu-mirage-discord/css/ayu.css css/ayu.css
+        run: mv /tmp/ayu-discord/css/ayu.css css/ayu.css
       
       - name: Commit changes to main
         run: |

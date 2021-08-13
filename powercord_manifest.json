@@ -1,8 +1,8 @@
 {
-    "name": "Ayu-Mirage",
-    "description": "A Discord theme using the Ayu Mirage color palette",
+    "name": "Ayu",
+    "description": "A Discord theme using the Ayu color palettes",
     "version": "2.0.0",
     "author": "sardonicism-04",
     "license": "MIT",
-    "theme": "./import.css"
+    "theme": "./{chosen theme}.css"
 }
