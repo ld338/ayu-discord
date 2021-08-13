@@ -206,6 +206,10 @@ img[class*=replyAvatar] {
   background-color: var(--background-secondary-alt);
 }
 
+div[class*=guildPopout] > div[class*=body] {
+  background-color: var(--background-floating);
+}
+
 /* SMALL POPOUTS */
 [class*=userPopout] > [class*=body],
 [class*=userPopout] [class*=footer] {

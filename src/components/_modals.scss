@@ -42,3 +42,8 @@
 [class*="quickswitcher"] > [class*="input"] {
     background-color: var(--background-secondary-alt);
 }
+
+// Server webhook popout
+div[class*="guildPopout"] > div[class*="body"] {
+    background-color: var(--background-floating);
+}
