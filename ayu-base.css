@@ -309,12 +309,21 @@ div[class*=nowPlayingColumn] div[class*=itemCard][class*=interactive]:hover {
     background-color: var(--background-tertiary);
 }
 
+/* Marks on sliders */
+div[class*=markDash] {
+    background-color: var(--background-accent) !important;
+}
+
+div[class*=markValue] {
+    color: var(--text-muted) !important;
+}
+
 /* END SECTION: Misc. tweaks */
 
 /* SECTION: Buttons */
 
 [class*="slider"] > div[class*="bar"] {
-    background-color: var(--background-floating);
+    background-color: var(--background-accent);
 }
 
 [aria-label="Home"][class*="wrapper"][class*="selected"] [class*="childWrapper"],
@@ -333,9 +342,27 @@ div[class*="barFill"] {
 }
 
 button[class*="lookFilled"][class*="colorGreen"],
-button[class*="lookInverted"][class*="colorGreen"]  {
+button[class*="lookInverted"][class*="colorGreen"],
+div[aria-controls="ADD_FRIEND-tab"] {
     background-color: var(--ayu-button-positive) !important;
     color: white;
+}
+
+/* Toggle sliders */
+div[class*=control] > div[class*=container]:not([style*="* 4.6%"]) {
+    background-color: var(--ayu-button-positive) !important;
+}
+
+div[class*=control] > div[class*=container][style*="* 4.6%"] {
+    background-color: var(--background-accent) !important;
+}
+
+div[class*=container]:not([style*="* 4.6%"]) > svg[class*=slider] > svg > path {
+    fill: var(--ayu-button-positive) !important;
+}
+
+div[class*=container][style*="* 4.6%"] > svg[class*=slider] > svg > path {
+    fill: var(--background-accent) !important;
 }
 
 button[class*="lookInverted"][class*="colorBrand"] {
