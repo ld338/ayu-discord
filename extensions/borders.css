@@ -254,21 +254,6 @@ div[class*="wrapperSimple"],
 
 [class*="folderIconWrapper"] {
     border-radius: var(--ayu-border-radius) !important;
-    background: var(--ayu-folder-icon);
-    background-size: 24px;
-    background-position: center;
-    background-repeat: no-repeat;
-    transition: none !important;
-}
-
-[class*="folderIconWrapper"]::before {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: inherit;
-    content: " ";
 }
 
 [class*="numberBadge"],
@@ -280,11 +265,8 @@ div[class*="wrapperSimple"],
     border-radius: var(--ayu-border-radius) !important;
 }
 
-[class*="closedFolderIconWrapper"] {
-    display: none;
-}
-[class*="expandedFolderIconWrapper"] {
-    display: none !important;
+[class*="closedFolderIconWrapper"] div[class*="icon"] {
+    border-radius: calc(var(--ayu-border-radius) - 20%);
 }
 
 [class*="expandedFolderBackground"] {
@@ -300,4 +282,8 @@ div[class*="wrapperSimple"],
 [class*="userInfo"] {
     overflow: unset;
     margin-left: 5px;
+}
+
+div[class*="iconActiveMedium"] {
+    border-radius: var(--ayu-border-radius) !important;
 }
