@@ -22,7 +22,7 @@ jobs:
           sourceMap: false
           
       - name: Move compiled CSS to final location
-        run: mv /tmp/ayu-mirage-discord/css css
+        run: mv /tmp/ayu-mirage-discord/css .
       
       - name: Commit changes to main
         run: |
