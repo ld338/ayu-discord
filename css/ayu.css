@@ -105,10 +105,8 @@ div[class*=popout] > div[class*=row][role=button]:hover,
   background-color: var(--background-floating);
 }
 
-div[class*=option]:hover,
-div[class*=option]:focus,
-div[class*=option][class*=focused] {
-  background-color: var(--background-tertiary);
+div[class*=selectOption]:hover {
+  background-color: var(--background-modifier-hover);
 }
 
 /* Replies */
