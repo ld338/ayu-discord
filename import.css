@@ -13,25 +13,25 @@
 .theme-dark {
     /* Discord vars */
     --background-primary: #1f2430;
-    --background-secondary: #191e2a;
+    --background-secondary: #191E2A;
     --background-secondary-alt: #101521;
     --background-tertiary: #141925;
-    --background-accent: #33415e;
+    --background-accent: #33415E;
     --background-floating: #232834;
 
     --channeltextarea-background: var(--background-accent);
-    --channels-default: #cbccc6;
+    --channels-default: #CBCCC6;
 
     --text-muted: #707a8c;
-    --text-normal: #cbccc6;
-    --text-link: #00b0f4;
+    --text-normal: #CBCCC6;
+    --text-link: #5CCFE6;
 
     --interactive-normal: #cbccc6;
     --interactive-hover: #cbccc6;
     --interactive-active: #fff;
     --interactive-muted: #707a8c;
 
-    --header-primary: white;
+    --header-primary: #CBCCC6;
     --header-secondary: #c9c9c9;
 
     --background-mentioned: #a29bfe1c;
@@ -50,12 +50,19 @@
 
     --ayu-transition-duration: 0.25s;
 
-    --ayu-hljs-string: #bbe67e;
-    --ayu-hljs-kw: #ffae57;
-    --ayu-hljs-title: #ffd57f;
-    --ayu-hljs-special: #d4bfff;
-    --ayu-hljs-attr: #5ccfe6;
-    --ayu-hljs-variable: #73d0ff;
+    --ayu-syntax-tag: #5CCFE6;
+    --ayu-syntax-func: #FFD580;
+    --ayu-syntax-entity: #73D0FF;
+    --ayu-syntax-string: #BAE67E;
+    --ayu-syntax-regexp: #95E6CB;
+    --ayu-syntax-markup: #F28779;
+    --ayu-syntax-keyword: #FFA759;
+    --ayu-syntax-special: #FFE6B3;
+    --ayu-syntax-comment: #5C6773;
+    --ayu-syntax-constant: #D4BFFF;
+    --ayu-syntax-operator: #F29E74;
+    --ayu-syntax-added: #A6CC70;
+    --ayu-syntax-removed: #F27983;
 
     --ayu-menu-red: var(--ayu-negative);
     --ayu-menu-default: var(--ayu-default);
@@ -70,7 +77,7 @@
 
     --ayu-status-online: var(--ayu-positive);
     --ayu-status-dnd: var(--ayu-negative);
-    --ayu-status-idle: var(--ayu-hljs-title);
+    --ayu-status-idle: #FFA759;
     --ayu-status-streaming: var(--ayu-presence-streaming);
     --ayu-status-offline: var(--background-primary);
 

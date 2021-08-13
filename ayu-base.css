@@ -14,48 +14,92 @@ html.theme-light::before {
 }
 
 /* SECTION: hljs syntax highlighting */
-[class^="codeBlockLang"],
-.hljs-doctag,
-.hljs-literal,
-.hljs-number,
-.hljs-meta-string,
-.hljs-regexp,
-.hljs-string,
-.hljs-addition {
-    color: var(--ayu-hljs-string) !important;
-}
-
 .hljs-meta,
-.hljs-subst,
-.hljs-attr,
-.hljs-keyword,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-    color: var(--ayu-hljs-kw) !important;
+.hljs-meta-keyword,
+.hljs-keyword {
+    color: var(--ayu-syntax-keyword) !important;
 }
 
-.hljs-selector-class,
-.hljs-symbol,
-.hljs-title,
-.hljs-type {
-    color: var(--ayu-hljs-title) !important;
-}
-
+.hljs-code,
+.hljs-formula,
+.hljs-strong,
+.hljs-emphasis,
 .hljs-built_in {
-    color: var(--ayu-hljs-special) !important;
+    color: var(--ayu-syntax-markup) !important;
 }
+
+.hljs-selector-pseudo,
+.hljs-selector-attr,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-bullet,
 .hljs-section,
+.hljs-title,
+.hljs-number,
+.hljs-literal {
+    color: var(--ayu-syntax-func) !important;
+}
+
+.hljs-operator {
+    color: var(--ayu-syntax-operator) !important;
+}
+
+.hljs-params,
+.hljs-variable,
+.hljs-punctuation {
+    color: var(--text-normal) !important;
+}
+
+.hljs-quote,
+.hljs-char.escape_,
+.hljs-regexp {
+    color: var(--ayu-syntax-regexp) !important;
+}
+
+.hljs-meta-string,
+.hljs-string {
+    color: var(--ayu-syntax-string) !important;
+}
+
+.hljs-symbol {
+    color: var(--ayu-syntax-special) !important;
+}
+
+.hljs-variable.language_ {
+    color: var(--ayu-syntax-constant) !important;
+}
+
+.hljs-subst,
+.hljs-variable.constant_ {
+    color: var(--ayu-syntax-regexp) !important;
+}
+
+.hljs-title.class_.inherited__,
+.hljs-title.class_ {
+    color: var(--ayu-syntax-entity) !important;
+}
+
+.hljs-doctag,
+.hljs-comment {
+    color: var(--ayu-syntax-comment) !important;
+}
+
+.hljs-selector-tag,
+.hljs-link,
+.hljs-attr,
 .hljs-attribute,
 .hljs-name,
-.hljs-selector-tag {
-    color: var(--ayu-hljs-attr) !important;
+.hljs-tag,
+.hljs-type {
+    color: var(--ayu-syntax-tag) !important;
 }
-.hljs-variable {
-    color: var(--ayu-hljs-variable) !important;
+
+.hljs-addition {
+    color: var(--ayu-syntax-added) !important;
 }
 
 .hljs-deletion {
-    color: var(--ayu-negative) !important;
+    color: var(--ayu-syntax-removed) !important;
 }
 
 /* END SECTION: hljs customisation */
@@ -96,7 +140,8 @@ div[class*=popout] > div[class*=row][role=button]:hover,
 
 /* Porple notifs www */
 div[class*=numberBadge],
-div[class*=unreadBar] {
+div[class*=unreadBar],
+div[class*=unreadMentionsIndicatorTop] > div[class*=unreadMentionsBar] {
     background-color: var(--ayu-notification-colour) !important;
 }
 
@@ -395,6 +440,7 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 [class*=role][class*=addButton],
 [class*=role][class*=overflowButton] {
     border-radius: 2.5px;
+    background-color: unset;
 }
 
 [role=option][class*=role]:not(button) {
