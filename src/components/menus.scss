@@ -22,10 +22,17 @@ div[class*="popout"] > div[class*="row"][role="button"]:hover,
     border-radius: var(--ayu-border-radius);
 }
 
-/* Roles adding menu */
+// Roles adding menu
 [role="dialog"][aria-label^="Add Role"] [class*="header"] {
     background-color: var(--background-secondary);
 }
 [role="dialog"][aria-label^="Add Role"] [class*="sectionTag"] {
     background-color: var(--background-floating);
+}
+
+// Select menus
+div[class*=option]:hover,
+div[class*=option]:focus,
+div[class*=option][class*=focused] {
+    background-color: var(--background-tertiary);
 }

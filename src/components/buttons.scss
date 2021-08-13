@@ -22,7 +22,6 @@ button[class*="lookFilled"][class*="colorGreen"],
 button[class*="lookInverted"][class*="colorGreen"],
 div[aria-controls="ADD_FRIEND-tab"] {
     background-color: var(--ayu-button-positive) !important;
-    color: white;
 }
 
 /* Toggle sliders */
@@ -44,7 +43,7 @@ div[class*="container"][style*="* 4.6%"] > svg[class*="slider"] > svg > path {
 
 button[class*="lookInverted"][class*="colorBrand"] {
     background-color: var(--ayu-button-default) !important;
-    color: white;
+    color: var(--text-normal) !important;
 }
 
 button[class*="lookFilled"][class*="colorRed"] {
@@ -54,6 +53,7 @@ button[class*="lookFilled"][class*="colorRed"] {
 button[class*="lookFilled"][class*="colorGrey"],
 button[class*="lookFilled"][class*="colorPrimary"] {
     background-color: var(--background-accent) !important;
+    color: var(--text-normal) !important;
 }
 
 [class*="streamPreview"] > button[class*="cta"] {

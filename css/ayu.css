@@ -35,7 +35,6 @@ button[class*=lookFilled][class*=colorGreen],
 button[class*=lookInverted][class*=colorGreen],
 div[aria-controls=ADD_FRIEND-tab] {
   background-color: var(--ayu-button-positive) !important;
-  color: white;
 }
 
 /* Toggle sliders */
@@ -57,7 +56,7 @@ div[class*=container][style*="* 4.6%"] > svg[class*=slider] > svg > path {
 
 button[class*=lookInverted][class*=colorBrand] {
   background-color: var(--ayu-button-default) !important;
-  color: white;
+  color: var(--text-normal) !important;
 }
 
 button[class*=lookFilled][class*=colorRed] {
@@ -67,6 +66,7 @@ button[class*=lookFilled][class*=colorRed] {
 button[class*=lookFilled][class*=colorGrey],
 button[class*=lookFilled][class*=colorPrimary] {
   background-color: var(--background-accent) !important;
+  color: var(--text-normal) !important;
 }
 
 [class*=streamPreview] > button[class*=cta] {
@@ -97,13 +97,18 @@ div[class*=popout] > div[class*=row][role=button]:hover,
   border-radius: var(--ayu-border-radius);
 }
 
-/* Roles adding menu */
 [role=dialog][aria-label^="Add Role"] [class*=header] {
   background-color: var(--background-secondary);
 }
 
 [role=dialog][aria-label^="Add Role"] [class*=sectionTag] {
   background-color: var(--background-floating);
+}
+
+div[class*=option]:hover,
+div[class*=option]:focus,
+div[class*=option][class*=focused] {
+  background-color: var(--background-tertiary);
 }
 
 /* Replies */
