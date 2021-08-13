@@ -31,8 +31,6 @@ div[class*="popout"] > div[class*="row"][role="button"]:hover,
 }
 
 // Select menus
-div[class*=option]:hover,
-div[class*=option]:focus,
-div[class*=option][class*=focused] {
-    background-color: var(--background-tertiary);
+div[class*="selectOption"]:hover {
+    background-color: var(--background-modifier-hover);
 }
