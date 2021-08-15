@@ -72,3 +72,8 @@ div[class*="markValue"] {
 div[class*="keybindShortcut"] span {
     background-color: var(--background-accent) !important;
 }
+
+// Remove orphaned gradient
+section[class*=title] div[class*=children]::after {
+    background: none !important;
+}

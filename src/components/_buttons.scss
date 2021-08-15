@@ -2,6 +2,7 @@
     background-color: var(--background-accent);
 }
 
+div[class*=serverBoostTabItem][class*=selected],
 div[class*="premiumTabItem"][class*="selected"],
 [aria-label="Home"][class*="wrapper"][class*="selected"] [class*="childWrapper"],
 [class*="radioGroup"] [class*="cardPrimaryEditable"][style*="rgb(114, 137, 218)"],
@@ -58,4 +59,13 @@ button[class*="lookFilled"][class*="colorPrimary"] {
 
 [class*="streamPreview"] > button[class*="cta"] {
     background-color: var(--background-accent);
+}
+
+// Progress bars
+div[class*=progress] rect[class*=background] {
+    color: var(--background-accent) !important;
+}
+
+div[class*=barBackground] {
+    background-color: var(--background-accent) !important;
 }

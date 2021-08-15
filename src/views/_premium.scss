@@ -13,3 +13,8 @@
 [class*="tierHeaderUnlocked"] {
     background-color: var(--background-secondary) !important;
 }
+
+div[class*=tierInProgress] {
+    background-color: var(--background-accent) !important;
+}
+
