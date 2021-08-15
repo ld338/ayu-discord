@@ -15,6 +15,7 @@ div[class*=categoryHeader] {
   background-color: var(--background-accent);
 }
 
+div[class*=serverBoostTabItem][class*=selected],
 div[class*=premiumTabItem][class*=selected],
 [aria-label=Home][class*=wrapper][class*=selected] [class*=childWrapper],
 [class*=radioGroup] [class*=cardPrimaryEditable][style*="rgb(114, 137, 218)"],
@@ -71,6 +72,14 @@ button[class*=lookFilled][class*=colorPrimary] {
 
 [class*=streamPreview] > button[class*=cta] {
   background-color: var(--background-accent);
+}
+
+div[class*=progress] rect[class*=background] {
+  color: var(--background-accent) !important;
+}
+
+div[class*=barBackground] {
+  background-color: var(--background-accent) !important;
 }
 
 [class*=colorDanger]:not(:hover):not(:active) {
@@ -306,9 +315,12 @@ div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-sel
   border: none !important;
 }
 
+div[class*=userPopout] > div[class*=footer] {
+  padding: 0 12px 16px;
+}
+
 [class*=note] textarea {
   background-color: var(--background-tertiary);
-  border-radius: var(--ayu-border-radius);
   padding: 10px;
 }
 
@@ -519,6 +531,10 @@ div[class*=toolbar] > div[class*=search] {
   background-color: var(--background-secondary) !important;
 }
 
+div[class*=tierInProgress] {
+  background-color: var(--background-accent) !important;
+}
+
 /* Mic Test thing */
 [class*=micTest] [class*=container] {
   border-radius: var(--ayu-border-radius);
@@ -710,4 +726,8 @@ div[class*=markValue] {
 /* Keybind icons */
 div[class*=keybindShortcut] span {
   background-color: var(--background-accent) !important;
+}
+
+section[class*=title] div[class*=children]::after {
+  background: none !important;
 }
