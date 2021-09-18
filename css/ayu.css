@@ -34,7 +34,7 @@ div[class*=barFill] {
 
 button[class*=lookFilled][class*=colorGreen],
 button[class*=lookInverted][class*=colorGreen],
-div[aria-controls=ADD_FRIEND-tab] {
+div[aria-controls=add_friend-tab] {
   background-color: var(--ayu-button-positive) !important;
 }
 
@@ -276,18 +276,18 @@ div[class*=topSection] [class*=tabBarContainer] {
   padding-bottom: 5px;
 }
 
-div[class*=topSection] [class*=tabBar][role=tabbar] {
+div[class*=topSection] [class*=tabBar][role=tablist] {
   height: 40px;
 }
 
-div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem] {
+div[class*=topSection] [class*=tabBar][role=tablist] [class*=tabBarItem] {
   margin: 0;
   padding: 0 15px;
   border-bottom: none;
   border-radius: var(--ayu-border-radius);
 }
 
-div[class*=topSection] [class*=tabBar][role=tabbar] [class*=tabBarItem][aria-selected=true] {
+div[class*=topSection] [class*=tabBar][role=tablist] [class*=tabBarItem][aria-selected=true] {
   background-color: var(--background-secondary-alt);
 }
 
