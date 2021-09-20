@@ -77,3 +77,9 @@ div[class*="keybindShortcut"] span {
 section[class*=title] div[class*=children]::after {
     background: none !important;
 }
+
+// Codeblock language indicator in WYSIWYG
+span[class*=codeBlockLang] {
+    color: var(--ayu-notification-colour);
+    font-weight: 600;
+}
