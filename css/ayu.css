@@ -514,7 +514,8 @@ div[class*=toolbar] > div[class*=search] {
 }
 
 [class*=perksModal] {
-  background-color: var(--background-primary);
+  background-color: var(--background-primary) !important;
+  background-image: none !important;
 }
 
 [class*=perksModal] [class*=tierMarkerContainer] [class*=tierMarkerBackground],
