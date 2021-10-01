@@ -392,7 +392,8 @@ div[class*=nowPlayingColumn] div[class*=itemCard][class*=interactive][aria-expan
 }
 
 /* SEARCH */
-[class*=elevationBorderHigh] {
+[class*=elevationBorderHigh],
+[class*=elevationBorderHigh] [class*=queryContainer] {
   background-color: var(--background-floating) !important;
 }
 
