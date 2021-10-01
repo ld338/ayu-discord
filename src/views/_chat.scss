@@ -25,7 +25,8 @@
 }
 
 /* SEARCH */
-[class*="elevationBorderHigh"] {
+[class*="elevationBorderHigh"],
+[class*="elevationBorderHigh"] [class*="queryContainer"] {
     background-color: var(--background-floating) !important;
 }
 [class*="elevationBorderHigh"] ::after {
