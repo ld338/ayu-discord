@@ -23,6 +23,7 @@ button[class*="lookFilled"][class*="colorGreen"],
 button[class*="lookInverted"][class*="colorGreen"],
 div[aria-controls="add_friend-tab"] {
     background-color: var(--ayu-button-positive) !important;
+    color: var(--header-primary) !important;
 }
 
 /* Toggle sliders */

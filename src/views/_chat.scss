@@ -25,19 +25,17 @@
 }
 
 /* SEARCH */
-[id*="search-results"] [class*="queryContainer"][class*="focused"],
-[id*="search-results"][class*="container"] {
-    background-color: var(--background-floating);
+[class*="elevationBorderHigh"] {
+    background-color: var(--background-floating) !important;
 }
-
-[id*="search-results"][class*="option"]::after {
+[class*="elevationBorderHigh"] ::after {
     background: none !important;
 }
-
-[id*="search-results"][class*="option"][class*="selected"] {
+[class*="elevationBorderHigh"] [class*="option"][class*="selected"] {
     background-color: var(--background-secondary);
 }
 
+// Filter backgrounds in search bar
 [class*="searchFilter"],
 [class*="searchAnswer"] {
     background-color: var(--background-accent) !important;
