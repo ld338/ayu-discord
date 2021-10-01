@@ -36,6 +36,7 @@ button[class*=lookFilled][class*=colorGreen],
 button[class*=lookInverted][class*=colorGreen],
 div[aria-controls=add_friend-tab] {
   background-color: var(--ayu-button-positive) !important;
+  color: var(--header-primary) !important;
 }
 
 /* Toggle sliders */
@@ -355,7 +356,8 @@ div[class*=userPopout] > div[class*=footer] {
 }
 
 /* "Active Now" sidebar */
-div[class*=nowPlayingColumn] div[class*=itemCard][class*=interactive]:hover {
+div[class*=nowPlayingColumn] div[class*=itemCard][class*=interactive]:hover,
+div[class*=nowPlayingColumn] div[class*=itemCard][class*=interactive][aria-expanded=true] {
   background-color: var(--background-tertiary);
 }
 
@@ -390,16 +392,15 @@ div[class*=nowPlayingColumn] div[class*=itemCard][class*=interactive]:hover {
 }
 
 /* SEARCH */
-[id*=search-results] [class*=queryContainer][class*=focused],
-[id*=search-results][class*=container] {
-  background-color: var(--background-floating);
+[class*=elevationBorderHigh] {
+  background-color: var(--background-floating) !important;
 }
 
-[id*=search-results][class*=option]::after {
+[class*=elevationBorderHigh] ::after {
   background: none !important;
 }
 
-[id*=search-results][class*=option][class*=selected] {
+[class*=elevationBorderHigh] [class*=option][class*=selected] {
   background-color: var(--background-secondary);
 }
 
