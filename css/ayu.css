@@ -443,6 +443,14 @@ div[class*=sidebar] > section[class*=panels] > [class*=container] > [class*=avat
   flex-direction: row;
 }
 
+[id*=status-picker-switch-account][class*=item] {
+  padding: 0 8px;
+}
+
+[id*=status-picker-switch-account][class*=item] div[class*=iconContainer] {
+  margin-left: 0;
+}
+
 [class*=customEmojiPlaceholder] {
   background-image: var(--ayu-edit-icon);
 }
