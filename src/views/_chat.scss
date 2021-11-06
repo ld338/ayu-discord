@@ -32,7 +32,8 @@
 [class*="elevationBorderHigh"] ::after {
     background: none !important;
 }
-[class*="elevationBorderHigh"] [class*="option"][class*="selected"] {
+[class*="elevationBorderHigh"] [class*="option"][class*="selected"],
+[class*="elevationBorderHigh"] [class*="option"][aria-selected="true"] {
     background-color: var(--background-secondary);
 }
 
