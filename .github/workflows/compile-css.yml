@@ -15,7 +15,7 @@ jobs:
         run: mkdir -vp /tmp/ayu-discord/css
 
       - name: Compile CSS from SCSS src
-        uses: gha-utilities/sass-build@v0.4.5
+        uses: gha-utilities/sass-build@v0.4.7
         with:
           source: ./src/main.scss
           destination: /tmp/ayu-discord/css/ayu.css
@@ -23,7 +23,7 @@ jobs:
           outputStyle: expanded
           
       - name: Move compiled CSS to final location
-        run: mv /tmp/ayu-discord/css/ayu.css css/ayu.css
+        run: mv /tmp/ayu-discord/css/ayu.css ./css/ayu.css
       
       - name: Commit changes to main
         run: |
