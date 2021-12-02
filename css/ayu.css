@@ -748,3 +748,7 @@ span[class*=codeBlockLang] {
   color: var(--ayu-notification-colour);
   font-weight: 600;
 }
+
+div[class*=eventCard] div[class*=footer] {
+  background-color: transparent;
+}
