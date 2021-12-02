@@ -83,3 +83,8 @@ span[class*=codeBlockLang] {
     color: var(--ayu-notification-colour);
     font-weight: 600;
 }
+
+// Event cards hover
+div[class*=eventCard] div[class*=footer] {
+    background-color: transparent;
+}
