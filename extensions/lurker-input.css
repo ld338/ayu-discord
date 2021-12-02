@@ -1,8 +1,17 @@
-form[class*=form]:not(:hover) [class*=placeholder],
 form[class*=form]:not(:hover) div[class*=buttons] button,
 form[class*=form]:not(:hover) button[class*=attachButton],
 form[class*=form]:not(:hover) [class*=contentWrapper],
 form[class*=form]:not(:hover) [class*=drawerSizingWrapper],
 form[class*=form]:not(:hover) div[class*=slateTextArea][class*=markup][role=textbox] {
     display: none;
+}
+
+form[class*=form]:not(:hover) [class*=placeholder] {
+    visibility: hidden;
+}
+
+form[class*=form]:not(:hover) div[class*=textArea] [class*=placeholder]::before {
+    content: "Hover to enable";
+    font-size: initial;
+    visibility: visible;
 }
