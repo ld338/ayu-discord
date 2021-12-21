@@ -2,6 +2,8 @@
     background-color: var(--background-accent);
 }
 
+button[class*=selectorButtonSelected],
+button[class*=selectorButton]:hover,
 div[class*=serverBoostTabItem][class*=selected],
 div[class*="premiumTabItem"][class*="selected"],
 [aria-label="Home"][class*="wrapper"][class*="selected"] [class*="childWrapper"],
@@ -69,4 +71,9 @@ div[class*=progress] rect[class*=background] {
 
 div[class*=barBackground] {
     background-color: var(--background-accent) !important;
+}
+
+// Timeout modal buttons
+div[class*=colorStandard] {
+    color: var(--header-primary);
 }
