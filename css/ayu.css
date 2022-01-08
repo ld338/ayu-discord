@@ -89,6 +89,18 @@ div[class*=colorStandard] {
   color: var(--header-primary);
 }
 
+div[class*=channelTextArea] div[class*=separator] button > div[class*=button] div[class*=buttonChild] {
+  opacity: 0.75 !important;
+  color: var(--ayu-notification-colour);
+}
+div[class*=channelTextArea] div[class*=separator] button > div[class*=button]:hover div[class*=buttonChild], div[class*=channelTextArea] div[class*=separator] button > div[class*=button]:focus div[class*=buttonChild], div[class*=channelTextArea] div[class*=separator] button > div[class*=button]:focus-within div[class*=buttonChild] {
+  opacity: 1 !important;
+}
+
+.activeButtonChild-2hgLAO:focus {
+  color: var(--ayu-notification-colour);
+}
+
 [class*=colorDanger]:not(:hover):not(:active) {
   color: var(--ayu-menu-red);
   background-color: transparent;
