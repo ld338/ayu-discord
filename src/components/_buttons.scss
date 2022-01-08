@@ -77,3 +77,23 @@ div[class*=barBackground] {
 div[class*=colorStandard] {
     color: var(--header-primary);
 }
+
+// Send message button
+div[class*=channelTextArea] div[class*=separator] button > div[class*=button] {
+    div[class*=buttonChild] {
+        opacity: 0.75 !important;
+        color: var(--ayu-notification-colour);
+    }
+
+    &:hover,
+    &:focus,
+    &:focus-within {
+        div[class*=buttonChild] {
+            opacity: 1 !important;
+        }
+    }
+}
+
+.activeButtonChild-2hgLAO:focus {
+    color: var(--ayu-notification-colour);
+}
