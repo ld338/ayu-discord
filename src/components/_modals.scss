@@ -16,22 +16,24 @@
     background-color: var(--background-floating);
 }
 
-[role="dialog"] [class*="footer"] {
-    background-color: var(--background-secondary);
-}
+[role=dialog] {
+    [class*=footer] {
+        background-color: var(--background-secondary);
+    }
 
-[role="dialog"] [class^="message"]:not([class^="replied"]) {
-    background-color: var(--background-primary);
+    [class^=message]:not([class^=replied]) {
+        background-color: var(--background-primary);
+    }
+
+    > div > [class*=thin][class*=scroller] {
+        background-color: var(--background-secondary);
+    }
 }
 
 [class*="menu"],
 [role="dialog"] [class*="reactors"] {
     background-color: var(--background-primary) !important;
     border-color: var(--background-secondary-alt);
-}
-
-[role="dialog"] > div > [class*="thin"][class*="scroller"] {
-    background-color: var(--background-secondary);
 }
 
 [class*="root"][class*="small"] a {

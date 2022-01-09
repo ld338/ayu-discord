@@ -1,15 +1,25 @@
 /* Replies */
-[class^="message"] [class*="cozy"] [class*="repliedMessage"] {
-    background-color: var(--background-secondary);
-    border-radius: var(--ayu-border-radius);
-    width: fit-content;
-    max-width: 100%;
-    padding: 4px;
-    margin: 0;
-}
+[class^=message] {
+    [class*=cozy] {
+        // Replies
+        [class*=repliedMessage] {
+            background-color: var(--background-secondary);
+            border-radius: var(--ayu-border-radius);
+            width: fit-content;
+            max-width: 100%;
+            padding: 4px;
+            margin: 0;
 
-[class^="message"] [class*="cozy"] [class*="repliedMessage"]::before {
-    display: none;
+            &::before {
+                display: none;
+            }
+        }
+    }
+
+    // Mentions
+    &[class*=mentioned]::before {
+        background-color: var(--ayu-notification-colour);
+    }
 }
 
 img[class*="replyAvatar"] {
@@ -21,10 +31,10 @@ img[class*="replyAvatar"] {
 /* Reactions on messages */
 [class*="reactions"][role="group"] [class*="reaction"] {
     background-color: var(--background-modifier-hover);
-}
 
-[class*="reactions"][role="group"] [class*="reaction"][class*="reactionMe"] {
-    background-color: var(--background-accent);
+    &[class*=reactionMe] {
+        background-color: var(--background-accent);
+    }
 }
 
 /* Game invites */
@@ -34,16 +44,13 @@ img[class*="replyAvatar"] {
     border-color: var(--background-secondary-alt);
 }
 
-/* Mentions */
-[class^="message"][class*="mentioned"]::before {
-    background-color: var(--ayu-notification-colour);
-}
-
 /* Spoilered stuff */
-[class*="spoilerText"][class*="hidden"] {
-    background-color: var(--background-tertiary) !important;
-}
+[class*="spoilerText"] {
+    &[class*="hidden"] {
+        background-color: var(--background-tertiary) !important;
+    }
 
-[class*="spoilerText"]:not([class*="hidden"]) {
-    background-color: var(--background-modifier-hover) !important;
+    &:not([class*=hidden]) {
+        background-color: var(--background-modifier-hover) !important;
+    }
 }

@@ -29,20 +29,24 @@ div[aria-controls="add_friend-tab"] {
 }
 
 /* Toggle sliders */
-div[class*="control"] > div[class*="container"]:not([style*="* 4.6%"]) {
-    background-color: var(--ayu-button-positive) !important;
-}
+div[class*=control] > {
+    div[class*=container] {
+        &:not([style*="* 4.6%"]) {
+            background-color: var(--ayu-button-positive) !important;
 
-div[class*="control"] > div[class*="container"][style*="* 4.6%"] {
-    background-color: var(--background-accent) !important;
-}
+            > svg[class*=slider] > svg > path {
+                fill: var(--ayu-button-positive) !important;
+            }
+        }
 
-div[class*="container"]:not([style*="* 4.6%"]) > svg[class*="slider"] > svg > path {
-    fill: var(--ayu-button-positive) !important;
-}
+        &[style*="* 4.6%"] {
+            background-color: var(--background-accent) !important;
 
-div[class*="container"][style*="* 4.6%"] > svg[class*="slider"] > svg > path {
-    fill: var(--background-accent) !important;
+            > svg[class*=slider] > svg > path {
+                fill: var(--background-accent) !important;
+            }
+        }
+    }
 }
 
 button[class*="lookInverted"][class*="colorBrand"] {
@@ -50,14 +54,16 @@ button[class*="lookInverted"][class*="colorBrand"] {
     color: var(--text-normal) !important;
 }
 
-button[class*="lookFilled"][class*="colorRed"] {
-    background-color: var(--ayu-button-negative) !important;
-}
+button[class*=lookFilled] {
+    &[class*=colorRed] {
+        background-color: var(--ayu-button-negative) !important;
+    }
 
-button[class*="lookFilled"][class*="colorGrey"],
-button[class*="lookFilled"][class*="colorPrimary"] {
-    background-color: var(--background-accent) !important;
-    color: var(--text-normal) !important;
+    &[class*=colorGrey],
+    &[class*=colorPrimary] {
+        background-color: var(--background-accent) !important;
+        color: var(--text-normal) !important;
+    }
 }
 
 [class*="streamPreview"] > button[class*="cta"] {
@@ -80,7 +86,7 @@ div[class*=colorStandard] {
 
 // Send message button
 div[class*=channelTextArea] div[class*=separator] button > div[class*=button] {
-    div[class*=buttonChild] {
+    div[class*=activeButtonChild] {
         opacity: 0.75 !important;
         color: var(--ayu-notification-colour);
     }
@@ -92,8 +98,4 @@ div[class*=channelTextArea] div[class*=separator] button > div[class*=button] {
             opacity: 1 !important;
         }
     }
-}
-
-.activeButtonChild-2hgLAO:focus {
-    color: var(--ayu-notification-colour);
 }

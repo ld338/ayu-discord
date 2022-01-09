@@ -1,14 +1,16 @@
-[class*="colorDanger"]:not(:hover):not(:active) {
-    color: var(--ayu-menu-red);
-    background-color: transparent;
-}
+[class*=colorDanger] {
+    &:not(:hover):not(:active) {
+        color: var(--ayu-menu-red);
+        background-color: transparent;
+    }
 
-[class*="colorDanger"]:hover,
-[class*="colorDanger"]:hover [class*="colorDefault"],
-[class*="colorDanger"]:active [class*="colorDefault"],
-[class*="colorDanger"]:active {
-    background-color: var(--ayu-menu-red) !important;
-    border-color: var(--ayu-menu-red);
+    &:hover,
+    &:hover [class*=colorDefault],
+    &:active,
+    &:active [class*=colorDefault] {
+        background-color: var(--ayu-menu-red) !important;
+        border-color: var(--ayu-menu-red);
+    }
 }
 
 div[class*="popout"] > div[class*="row"][role="button"]:hover,

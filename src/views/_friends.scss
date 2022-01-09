@@ -3,7 +3,11 @@
 }
 
 /* "Active Now" sidebar */
-div[class*="nowPlayingColumn"] div[class*="itemCard"][class*="interactive"]:hover,
-div[class*="nowPlayingColumn"] div[class*="itemCard"][class*="interactive"][aria-expanded="true"] {
-    background-color: var(--background-tertiary);
+div[class*=nowPlayingColumn] {
+    div[class*=itemCard][class*=interactive] {
+        &[aria-expanded=true],
+        &:hover {
+            background-color: var(--background-tertiary);
+        }
+    }
 }

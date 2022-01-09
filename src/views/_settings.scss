@@ -1,14 +1,14 @@
 /* Mic Test thing */
 [class*="micTest"] [class*="container"] {
     border-radius: var(--ayu-border-radius);
-}
 
-[class*="micTest"] [class*="container"] [class*="notches"] {
-    display: none;
-}
+    [class*=notches] {
+        display: none;
+    }
 
-[class*="micTest"] [class*="container"] [class*="progress"] {
-    background-color: var(--background-secondary);
+    [class*=progress] {
+        background-color: var(--background-secondary);
+    }
 }
 
 /* Settings hovering */

@@ -1,12 +1,14 @@
 /* SERVER LIST */
-[class*="circleIconButton"] {
+[class*=circleIconButton] {
     color: var(--ayu-positive);
+
+    &[class*=selected],
+    &:hover {
+        background-color: var(--ayu-positive);
+        color: white;
+    }
 }
-[class*="circleIconButton"][class*="selected"],
-[class*="circleIconButton"]:hover {
-    background-color: var(--ayu-positive);
-    color: white;
-}
+
 [class*="guildSeparator"] {
     background-color: var(--background-accent);
 }
@@ -25,16 +27,23 @@
 }
 
 /* SEARCH */
-[class*="elevationBorderHigh"],
-[class*="elevationBorderHigh"] [class*="queryContainer"] {
+[class*=elevationBorderHigh] {
     background-color: var(--background-floating) !important;
-}
-[class*="elevationBorderHigh"] ::after {
-    background: none !important;
-}
-[class*="elevationBorderHigh"] [class*="option"][class*="selected"],
-[class*="elevationBorderHigh"] [class*="option"][aria-selected="true"] {
-    background-color: var(--background-secondary);
+
+    [class*=queryContainer] {
+        background-color: var(--background-floating) !important
+    }
+
+    &::after {
+        background: none !important;
+    }
+
+    [class*=option] {
+        &[class*=selected],
+        &[aria-selected=true] {
+            background-color: var(--background-secondary);
+        }
+    }
 }
 
 // Filter backgrounds in search bar
@@ -78,10 +87,10 @@ div[class*="sidebar"] > section[class*="panels"] > [class*="container"] > [class
 
 [id*="status-picker-switch-account"][class*="item"] {
     padding: 0 8px;
-}
 
-[id*="status-picker-switch-account"][class*="item"] div[class*="iconContainer"] {
-    margin-left: 0;
+    div[class*=iconContainer] {
+        margin-left: 0;
+    }
 }
 
 [class*="customEmojiPlaceholder"] {
@@ -148,10 +157,12 @@ div[class*="chat"] > section[class*="container"][class*="themed"] {
     background-color: var(--background-secondary);
 }
 
-div[class*="toolbar"] > a[class*="anchor"] {
-    display: none;
-}
+div[class*=toolbar] > {
+    a[class*=anchor] {
+        display: none;
+    }
 
-div[class*="toolbar"] > div[class*="search"] {
-    order: 1;
+    div[class*=search] {
+        order: 1
+    }
 }

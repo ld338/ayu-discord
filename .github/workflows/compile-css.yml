@@ -20,7 +20,7 @@ jobs:
           source: ./src/main.scss
           destination: /tmp/ayu-discord/css/ayu.css
           sourceMap: false
-          outputStyle: expanded
+          outputStyle: compressed
           
       - name: Move compiled CSS to final location
         run: mv /tmp/ayu-discord/css/ayu.css ./css/ayu.css

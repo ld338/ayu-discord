@@ -1,10 +1,11 @@
 [class*="perksModal"] {
     background-color: var(--background-primary) !important;
     background-image: none !important;
-}
-[class*="perksModal"] [class*="tierMarkerContainer"] [class*="tierMarkerBackground"],
-[class*="perksModal"] [class^="perks"] > [class^="perk"] {
-    background-color: var(--background-floating);
+
+    [class*=tierMarkerContainer] [class*=tierMarkerBackground],
+    [class*=perks] > [class*=perk] {
+        background-color: var(--background-floating);
+    }
 }
 
 [class*="tierBody"] {
