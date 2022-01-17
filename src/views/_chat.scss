@@ -34,7 +34,7 @@
         background-color: var(--background-floating) !important
     }
 
-    & div[class*=option]::after {
+    & li[class*=option]::after {
         background: none !important;
     }
 
