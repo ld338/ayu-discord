@@ -34,7 +34,7 @@
         background-color: var(--background-floating) !important
     }
 
-    & li[class*=option]::after {
+    & [class*=resultsGroup] [class*=option]::after {
         background: none !important;
     }
 
