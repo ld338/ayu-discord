@@ -16,6 +16,15 @@
     background-color: var(--background-accent);
 }
 
+// Server home tab
+div[class*=base] {
+    div[class*=content] {
+        div[class*=background][class*=chat] {
+            background-color: var(--background-primary);
+        }
+    }
+}
+
 /* INFO BARS */
 [class*="messagesErrorBar"] {
     background-color: var(--ayu-negative) !important;
