@@ -9,10 +9,8 @@
     }
 }
 
-[class*="guildSeparator"] {
-    background-color: var(--background-accent);
-}
-[aria-label="Home"] [class*="childWrapper"] {
+[class*="guildSeparator"],
+[class*="childWrapper"] {
     background-color: var(--background-accent);
 }
 
