@@ -26,6 +26,8 @@
     --text-normal: #B3B1AD;
     --text-link: #39BAE6;
 
+    --input-background: var(--background-tertiary);
+
     --interactive-normal: #B3B1AD;
     --interactive-hover: #B3B1AD;
     --interactive-active: #fff;
