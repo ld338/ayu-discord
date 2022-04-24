@@ -178,13 +178,17 @@ div[class*="toolbar"] > {
 div[class*="chat"] {
     $content: "> div[class*=content]";
 
+    #{$content} > div[class*="container"] {
+        background-color: var(--background-tertiary);
+    }
+
     #{$content} > div[class*="container"][class*="showTopicCard"] {
         background-color: var(--background-floating);
     }
 
     &[class*="threadSidebarOpen"] {
         #{$content} > div[class*="container"] {
-            background-color: var(--background-floating);
+            background-color: var(--background-tertiary);
         }
     }
 }
