@@ -179,7 +179,7 @@ div[class*="chat"] {
     $content: "> div[class*=content]";
 
     #{$content} > div[class*="container"] {
-        background-color: var(--background-tertiary);
+        background-color: var(--background-secondary);
     }
 
     #{$content} > div[class*="container"][class*="showTopicCard"] {
@@ -188,7 +188,7 @@ div[class*="chat"] {
 
     &[class*="threadSidebarOpen"] {
         #{$content} > div[class*="container"] {
-            background-color: var(--background-tertiary);
+            background-color: var(--background-secondary);
         }
     }
 }
