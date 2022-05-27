@@ -73,20 +73,19 @@ div[class*="unreadMentionsIndicatorTop"] > div[class*="unreadMentionsBar"] {
 }
 
 /* Southwest user area */
-[class*="container"]
-  [class*="avatarWrapper"]
-  > [class*="avatar"][class*="wrapper"] {
-  padding: 4px;
-}
-
-div[class*="sidebar"]
-  > section[class*="panels"]
-  > [class*="container"]
+div[class*="sidebar"] > section[class*="panels"] > [class*="container"] {
   > [class*="avatarWrapper"] {
-  position: fixed;
-  bottom: 16px;
-  z-index: 1;
-  left: 13px;
+    > [class*="avatar"][class*="wrapper"] {
+      padding: 4px;
+    }
+
+    position: fixed;
+    bottom: 16px;
+    z-index: 1;
+    left: 13px;
+  }
+
+  height: 0;
 }
 
 [class*="animatorTop"] > [class*="styleFixed"] {
