@@ -1,7 +1,7 @@
 .hljs-meta,
 .hljs-meta-keyword,
 .hljs-keyword {
-    color: var(--ayu-syntax-keyword) !important;
+  color: var(--ayu-syntax-keyword) !important;
 }
 
 .hljs-code,
@@ -9,7 +9,7 @@
 .hljs-strong,
 .hljs-emphasis,
 .hljs-built_in {
-    color: var(--ayu-syntax-markup) !important;
+  color: var(--ayu-syntax-markup) !important;
 }
 
 .hljs-selector-pseudo,
@@ -21,51 +21,51 @@
 .hljs-title,
 .hljs-number,
 .hljs-literal {
-    color: var(--ayu-syntax-func) !important;
+  color: var(--ayu-syntax-func) !important;
 }
 
 .hljs-operator {
-    color: var(--ayu-syntax-operator) !important;
+  color: var(--ayu-syntax-operator) !important;
 }
 
 .hljs-params,
 .hljs-variable,
 .hljs-punctuation {
-    color: var(--text-normal) !important;
+  color: var(--text-normal) !important;
 }
 
 .hljs-quote,
 .hljs-char.escape_,
 .hljs-regexp {
-    color: var(--ayu-syntax-regexp) !important;
+  color: var(--ayu-syntax-regexp) !important;
 }
 
 .hljs-meta-string,
 .hljs-string {
-    color: var(--ayu-syntax-string) !important;
+  color: var(--ayu-syntax-string) !important;
 }
 
 .hljs-symbol {
-    color: var(--ayu-syntax-special) !important;
+  color: var(--ayu-syntax-special) !important;
 }
 
 .hljs-variable.language_ {
-    color: var(--ayu-syntax-constant) !important;
+  color: var(--ayu-syntax-constant) !important;
 }
 
 .hljs-subst,
 .hljs-variable.constant_ {
-    color: var(--ayu-syntax-regexp) !important;
+  color: var(--ayu-syntax-regexp) !important;
 }
 
 .hljs-title.class_.inherited__,
 .hljs-title.class_ {
-    color: var(--ayu-syntax-entity) !important;
+  color: var(--ayu-syntax-entity) !important;
 }
 
 .hljs-doctag,
 .hljs-comment {
-    color: var(--ayu-syntax-comment) !important;
+  color: var(--ayu-syntax-comment) !important;
 }
 
 .hljs-selector-tag,
@@ -75,13 +75,13 @@
 .hljs-name,
 .hljs-tag,
 .hljs-type {
-    color: var(--ayu-syntax-tag) !important;
+  color: var(--ayu-syntax-tag) !important;
 }
 
 .hljs-addition {
-    color: var(--ayu-syntax-added) !important;
+  color: var(--ayu-syntax-added) !important;
 }
 
 .hljs-deletion {
-    color: var(--ayu-syntax-removed) !important;
+  color: var(--ayu-syntax-removed) !important;
 }

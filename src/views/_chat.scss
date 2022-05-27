@@ -1,147 +1,153 @@
 /* SERVER LIST */
 [class*="circleIconButton"] {
-    color: var(--ayu-positive);
+  color: var(--ayu-positive);
 
-    &[class*="selected"],
-    &:hover {
-        background-color: var(--ayu-positive);
-        color: white;
-    }
+  &[class*="selected"],
+  &:hover {
+    background-color: var(--ayu-positive);
+    color: white;
+  }
 }
 
 [class*="guildSeparator"],
 ul[class*="tree"] svg [class*="childWrapper"] {
-    background-color: var(--background-accent);
+  background-color: var(--background-accent);
 }
 
 // Server home tab
 div[class*="base"] {
-    div[class*="content"] {
-        div[class*="background"][class*="chat"] {
-            background-color: var(--background-primary);
-        }
+  div[class*="content"] {
+    div[class*="background"][class*="chat"] {
+      background-color: var(--background-primary);
     }
+  }
 }
 
 /* INFO BARS */
 [class*="messagesErrorBar"] {
-    background-color: var(--ayu-negative) !important;
+  background-color: var(--ayu-negative) !important;
 }
 [class*="newMessagesBar"] {
-    background-color: var(--ayu-default);
-    opacity: 0.75;
-    z-index: 20;
+  background-color: var(--ayu-default);
+  opacity: 0.75;
+  z-index: 20;
 }
 
 /* SEARCH */
 [class*="elevationBorderHigh"] {
+  background-color: var(--background-floating) !important;
+
+  [class*="queryContainer"] {
     background-color: var(--background-floating) !important;
+  }
 
-    [class*="queryContainer"] {
-        background-color: var(--background-floating) !important;
-    }
+  & [class*="resultsGroup"] [class*="option"]::after {
+    background: none !important;
+  }
 
-    & [class*="resultsGroup"] [class*="option"]::after {
-        background: none !important;
+  [class*="option"] {
+    &[class*="selected"],
+    &[aria-selected="true"] {
+      background-color: var(--background-secondary);
     }
-
-    [class*="option"] {
-        &[class*="selected"],
-        &[aria-selected="true"] {
-            background-color: var(--background-secondary);
-        }
-    }
+  }
 }
 
 // Filter backgrounds in search bar
 [class*="searchFilter"],
 [class*="searchAnswer"] {
-    background-color: var(--background-accent) !important;
-    color: var(--text-normal);
+  background-color: var(--background-accent) !important;
+  color: var(--text-normal);
 }
 
 /* Calendar picker for search */
 div[class*="react-datepicker"] {
-    background-color: var(--background-floating) !important;
+  background-color: var(--background-floating) !important;
 }
 
 /* Porple notifs www */
 div[class*="numberBadge"],
 div[class*="unreadBar"],
 div[class*="unreadMentionsIndicatorTop"] > div[class*="unreadMentionsBar"] {
-    background-color: var(--ayu-notification-colour) !important;
+  background-color: var(--ayu-notification-colour) !important;
 }
 
 /* Southwest user area */
-[class*="container"] [class*="avatarWrapper"] > [class*="avatar"][class*="wrapper"] {
-    padding: 4px;
+[class*="container"]
+  [class*="avatarWrapper"]
+  > [class*="avatar"][class*="wrapper"] {
+  padding: 4px;
 }
 
-div[class*="sidebar"] > section[class*="panels"] > [class*="container"] > [class*="avatarWrapper"] {
-    position: fixed;
-    bottom: 16px;
-    z-index: 1;
-    left: 13px;
+div[class*="sidebar"]
+  > section[class*="panels"]
+  > [class*="container"]
+  > [class*="avatarWrapper"] {
+  position: fixed;
+  bottom: 16px;
+  z-index: 1;
+  left: 13px;
 }
 
 [class*="animatorTop"] > [class*="styleFixed"] {
-    width: auto;
-    left: 50px;
-    bottom: -61.5px;
-    display: flex;
-    flex-direction: row;
+  width: auto;
+  left: 50px;
+  bottom: -61.5px;
+  display: flex;
+  flex-direction: row;
 }
 
-
 nav[class*="guilds"] ul[class*="tree"] {
-    height: calc(100% - 160px);
+  height: calc(100% - 160px);
 }
 
 [class*="container"] > [class*="flex"][style="flex: 0 1 auto;"] {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    left: 0;
-    bottom: 39px;
-    padding: 20px;
-    pointer-events: visible;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  bottom: 39px;
+  padding: 20px;
+  pointer-events: visible;
 }
 
 /* Top toolbar stuff */
 div[class*="chat"] > [class*="content"]::before,
-nav[class*="container"] > div[class*="container"][class*="clickable"] > header[class*="header"] {
-    box-shadow: none;
+nav[class*="container"]
+  > div[class*="container"][class*="clickable"]
+  > header[class*="header"] {
+  box-shadow: none;
 }
 
 div[class*="chat"] > section[class*="container"][class*="themed"] {
-    background-color: var(--background-secondary);
+  background-color: var(--background-secondary);
 }
 
 div[class*="toolbar"] > {
-    a[class*="anchor"] {
-        display: none;
-    }
+  a[class*="anchor"] {
+    display: none;
+  }
 
-    div[class*="search"] {
-        order: 1;
-    }
+  div[class*="search"] {
+    order: 1;
+  }
 }
 
 // Forum channels
 div[class*="chat"] {
-    $content: "> div[class*=content]";
+  $content: "> div[class*=content]";
 
+  #{$content} > div[class*="container"] {
+    background-color: var(--background-secondary);
+  }
+
+  #{$content} > div[class*="container"][class*="showTopicCard"] {
+    background-color: var(--background-floating);
+  }
+
+  &[class*="threadSidebarOpen"] {
     #{$content} > div[class*="container"] {
-        background-color: var(--background-secondary);
+      background-color: var(--background-secondary);
     }
-
-    #{$content} > div[class*="container"][class*="showTopicCard"] {
-        background-color: var(--background-floating);
-    }
-
-    &[class*="threadSidebarOpen"] {
-        #{$content} > div[class*="container"] {
-            background-color: var(--background-secondary);
-        }
-    }
+  }
 }

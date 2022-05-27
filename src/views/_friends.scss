@@ -1,13 +1,13 @@
 [class*="peopleColumn"] {
-    background-color: var(--background-primary);
+  background-color: var(--background-primary);
 }
 
 /* "Active Now" sidebar */
-div[class*=nowPlayingColumn] {
-    div[class*=itemCard][class*=interactive] {
-        &[aria-expanded=true],
-        &:hover {
-            background-color: var(--background-tertiary);
-        }
+div[class*="nowPlayingColumn"] {
+  div[class*="itemCard"][class*="interactive"] {
+    &[aria-expanded="true"],
+    &:hover {
+      background-color: var(--background-tertiary);
     }
+  }
 }

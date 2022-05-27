@@ -8,44 +8,44 @@
 [class*="uploadModal"] > [class*="inner"],
 [role="dialog"] [class*="content"][class*="thin"][class*="scrollerBase"],
 [role="dialog"] [class*="header"][class*="horizontal"] {
-    background-color: var(--background-floating) !important;
+  background-color: var(--background-floating) !important;
 }
 
 [class*="root"][class*="small"],
 [class*="modalContents"] {
-    background-color: var(--background-floating);
+  background-color: var(--background-floating);
 }
 
-[role=dialog] {
-    [class*=footer] {
-        background-color: var(--background-secondary);
-    }
+[role="dialog"] {
+  [class*="footer"] {
+    background-color: var(--background-secondary);
+  }
 
-    [class^=message]:not([class^=replied]) {
-        background-color: var(--background-primary);
-    }
+  [class^="message"]:not([class^="replied"]) {
+    background-color: var(--background-primary);
+  }
 
-    > div > [class*=thin][class*=scroller] {
-        background-color: var(--background-secondary);
-    }
+  > div > [class*="thin"][class*="scroller"] {
+    background-color: var(--background-secondary);
+  }
 }
 
 [class*="menu"],
 [role="dialog"] [class*="reactors"] {
-    background-color: var(--background-primary) !important;
-    border-color: var(--background-secondary-alt);
+  background-color: var(--background-primary) !important;
+  border-color: var(--background-secondary-alt);
 }
 
 [class*="root"][class*="small"] a {
-    color: var(--text-link);
+  color: var(--text-link);
 }
 
 /* Quick switcher */
 [class*="quickswitcher"] > [class*="input"] {
-    background-color: var(--background-secondary-alt);
+  background-color: var(--background-secondary-alt);
 }
 
 // Server webhook popout
 div[class*="guildPopout"] > div[class*="body"] {
-    background-color: var(--background-floating);
+  background-color: var(--background-floating);
 }

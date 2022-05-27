@@ -1,101 +1,105 @@
 [class*="slider"] > div[class*="bar"] {
-    background-color: var(--background-accent);
+  background-color: var(--background-accent);
 }
 
-button[class*=selectorButtonSelected],
-button[class*=selectorButton]:hover,
-div[class*=serverBoostTabItem][class*=selected],
+button[class*="selectorButtonSelected"],
+button[class*="selectorButton"]:hover,
+div[class*="serverBoostTabItem"][class*="selected"],
 div[class*="premiumTabItem"][class*="selected"],
 [class*="wrapper"][class*="selected"] [class*="childWrapper"],
-[class*="radioGroup"] [class*="cardPrimaryEditable"][style*="rgb(114, 137, 218)"],
+[class*="radioGroup"]
+  [class*="cardPrimaryEditable"][style*="rgb(114, 137, 218)"],
 [class*="valueChecked"],
 button[class*="lookFilled"][class*="colorBrand"]:not(button[class*="customSwatch"]) {
-    background-color: var(--ayu-button-default) !important;
+  background-color: var(--ayu-button-default) !important;
 }
 
 div[class*="barFill"] {
-    background-color: var(--ayu-notification-colour);
+  background-color: var(--ayu-notification-colour);
 }
 
 [class*="valueUnchecked"] {
-    background-color: var(--background-accent);
+  background-color: var(--background-accent);
 }
 
 button[class*="lookFilled"][class*="colorGreen"],
 button[class*="lookInverted"][class*="colorGreen"],
 div[aria-controls="add_friend-tab"] {
-    background-color: var(--ayu-button-positive) !important;
-    color: var(--header-primary) !important;
+  background-color: var(--ayu-button-positive) !important;
+  color: var(--header-primary) !important;
 }
 
 /* Toggle sliders */
-div[class*=control] > {
-    div[class*=container] {
-        &:not([style*="* 4.6%"]) {
-            background-color: var(--ayu-button-positive) !important;
+div[class*="control"] > {
+  div[class*="container"] {
+    &:not([style*="* 4.6%"]) {
+      background-color: var(--ayu-button-positive) !important;
 
-            > svg[class*=slider] > svg > path {
-                fill: var(--ayu-button-positive) !important;
-            }
-        }
-
-        &[style*="* 4.6%"] {
-            background-color: var(--background-accent) !important;
-
-            > svg[class*=slider] > svg > path {
-                fill: var(--background-accent) !important;
-            }
-        }
+      > svg[class*="slider"] > svg > path {
+        fill: var(--ayu-button-positive) !important;
+      }
     }
+
+    &[style*="* 4.6%"] {
+      background-color: var(--background-accent) !important;
+
+      > svg[class*="slider"] > svg > path {
+        fill: var(--background-accent) !important;
+      }
+    }
+  }
 }
 
 button[class*="lookInverted"][class*="colorBrand"] {
-    background-color: var(--ayu-button-default) !important;
-    color: var(--text-normal) !important;
+  background-color: var(--ayu-button-default) !important;
+  color: var(--text-normal) !important;
 }
 
-button[class*=lookFilled] {
-    &[class*=colorRed] {
-        background-color: var(--ayu-button-negative) !important;
-    }
+button[class*="lookFilled"] {
+  &[class*="colorRed"] {
+    background-color: var(--ayu-button-negative) !important;
+  }
 
-    &[class*=colorGrey],
-    &[class*=colorPrimary] {
-        background-color: var(--background-accent) !important;
-        color: var(--text-normal) !important;
-    }
+  &[class*="colorGrey"],
+  &[class*="colorPrimary"] {
+    background-color: var(--background-accent) !important;
+    color: var(--text-normal) !important;
+  }
 }
 
 [class*="streamPreview"] > button[class*="cta"] {
-    background-color: var(--background-accent);
+  background-color: var(--background-accent);
 }
 
 // Progress bars
-div[class*=progress] rect[class*=background] {
-    color: var(--background-accent) !important;
+div[class*="progress"] rect[class*="background"] {
+  color: var(--background-accent) !important;
 }
 
-div[class*=barBackground] {
-    background-color: var(--background-accent) !important;
+div[class*="barBackground"] {
+  background-color: var(--background-accent) !important;
 }
 
 // Timeout modal buttons
-div[class*=colorStandard] {
-    color: var(--header-primary);
+div[class*="colorStandard"] {
+  color: var(--header-primary);
 }
 
 // Send message button
-div[class*=channelTextArea] div[class*=separator] button > div[class*=button] {
-    div[class*=activeButtonChild] {
-        opacity: 0.75 !important;
-        color: var(--ayu-notification-colour);
-    }
+div[class*="channelTextArea"]
+  div[class*="separator"]
+  button
+  > div[class*="button"] {
+  div[class*="activeButtonChild"] {
+    opacity: 0.75 !important;
+    color: var(--ayu-notification-colour);
+  }
 
-    &:hover,
-    &:focus,
-    &:focus-within {
-        div[class*=buttonChild] {
-            opacity: 1 !important;
-        }
+  &:hover,
+  &:focus,
+  &:focus-within {
+    div[class*="buttonChild"] {
+      opacity: 1 !important;
     }
+  }
 }

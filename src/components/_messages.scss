@@ -1,56 +1,56 @@
 /* Replies */
-[class^=message] {
-    [class*=cozy] {
-        // Replies
-        [class*=repliedMessage] {
-            background-color: var(--background-secondary);
-            border-radius: var(--ayu-border-radius);
-            width: fit-content;
-            max-width: 100%;
-            padding: 4px;
-            margin: 0;
+[class^="message"] {
+  [class*="cozy"] {
+    // Replies
+    [class*="repliedMessage"] {
+      background-color: var(--background-secondary);
+      border-radius: var(--ayu-border-radius);
+      width: fit-content;
+      max-width: 100%;
+      padding: 4px;
+      margin: 0;
 
-            &::before {
-                display: none;
-            }
-        }
+      &::before {
+        display: none;
+      }
     }
+  }
 
-    // Mentions
-    &[class*=mentioned]::before {
-        background-color: var(--ayu-notification-colour);
-    }
+  // Mentions
+  &[class*="mentioned"]::before {
+    background-color: var(--ayu-notification-colour);
+  }
 }
 
 img[class*="replyAvatar"] {
-    background-color: var(--background-secondary-alt);
-    content: var(--ayu-reply-icon);
-    padding: 1.5px;
+  background-color: var(--background-secondary-alt);
+  content: var(--ayu-reply-icon);
+  padding: 1.5px;
 }
 
 /* Reactions on messages */
 [class*="reactions"][role="group"] [class*="reaction"] {
-    background-color: var(--background-modifier-hover);
+  background-color: var(--background-modifier-hover);
 
-    &[class*=reactionMe] {
-        background-color: var(--background-accent);
-    }
+  &[class*="reactionMe"] {
+    background-color: var(--background-accent);
+  }
 }
 
 /* Game invites */
 [class^="preview"][class^="invite"],
 [class^="message"] [class^="invite"] {
-    background-color: var(--background-secondary);
-    border-color: var(--background-secondary-alt);
+  background-color: var(--background-secondary);
+  border-color: var(--background-secondary-alt);
 }
 
 /* Spoilered stuff */
 [class*="spoilerText"] {
-    &[class*="hidden"] {
-        background-color: var(--background-tertiary) !important;
-    }
+  &[class*="hidden"] {
+    background-color: var(--background-tertiary) !important;
+  }
 
-    &:not([class*=hidden]) {
-        background-color: var(--background-modifier-hover) !important;
-    }
+  &:not([class*="hidden"]) {
+    background-color: var(--background-modifier-hover) !important;
+  }
 }

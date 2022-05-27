@@ -1,22 +1,21 @@
 [class*="perksModal"] {
-    background-color: var(--background-primary) !important;
-    background-image: none !important;
+  background-color: var(--background-primary) !important;
+  background-image: none !important;
 
-    [class*=tierMarkerContainer] [class*=tierMarkerBackground],
-    [class*=perks] > [class*=perk] {
-        background-color: var(--background-floating);
-    }
+  [class*="tierMarkerContainer"] [class*="tierMarkerBackground"],
+  [class*="perks"] > [class*="perk"] {
+    background-color: var(--background-floating);
+  }
 }
 
 [class*="tierBody"] {
-    background-color: var(--background-floating) !important;
+  background-color: var(--background-floating) !important;
 }
 [class*="tierHeaderLocked"],
 [class*="tierHeaderUnlocked"] {
-    background-color: var(--background-secondary) !important;
+  background-color: var(--background-secondary) !important;
 }
 
-div[class*=tierInProgress] {
-    background-color: var(--background-accent) !important;
+div[class*="tierInProgress"] {
+  background-color: var(--background-accent) !important;
 }
-

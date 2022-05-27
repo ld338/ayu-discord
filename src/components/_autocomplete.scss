@@ -1,11 +1,11 @@
 [class*="autocompleteInner"] {
-    background-color: var(--background-floating);
+  background-color: var(--background-floating);
 }
 [class*="autocomplete"] [class*="selected"] {
-    background-color: var(--background-secondary);
+  background-color: var(--background-secondary);
 }
 
 /* Slash Command Headers */
 div[class*="categoryHeader"] {
-    background-color: var(--background-secondary);
+  background-color: var(--background-secondary);
 }

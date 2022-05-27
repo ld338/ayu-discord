@@ -1,132 +1,91 @@
 /* SMALL POPOUTS */
 [class*="userPopout"] > [class*="body"],
 [class*="userPopout"] [class*="footer"] {
-    background-color: var(--background-floating) !important;
+  background-color: var(--background-floating) !important;
 }
 
 [role="option"][class*="role"],
 [class*="role"][class*="addButton"],
 [class*="role"][class*="overflowButton"] {
-    border-radius: 2.5px;
-    background-color: unset;
+  border-radius: 2.5px;
+  background-color: unset;
 }
 
-// [role="option"][class*="role"]:not(button) {
-//     border-radius: 2.5px;
-    // position: relative;
-    // overflow: hidden;
-    // z-index: 1;
-    // padding: 0;
-// }
-
-// [class*="roleCircle"] {
-//     border-radius: 0;
-//     padding: 0 0 100% 0;
-//     width: 6px;
-//     margin-left: 0;
-
-//     &::before {
-//         background: inherit;
-//         position: absolute;
-//         content: "";
-//         top: 0px;
-//         left: 0px;
-//         width: 100%;
-//         height: 100%;
-//         opacity: 0.3;
-//         z-index: -1;
-//     }
-// }
-
-// [role=option][class*=role]:not(button):hover {
-//     [class*="roleCircle"] {
-//         background-color: var(--ayu-negative) !important;
-//     }
-
-//     [class*="roleRemoveIcon"] {
-//         width: 100%;
-//         height: 100%;
-//         top: 0;
-//         left: 0;
-//         position: absolute;
-//         opacity: 0;
-//     }
-// }
-
 /* LARGE POPOUTS */
-div[class*=topSection] {
-    [class*=tabBarContainer] {
-        border: none;
-        padding-bottom: 5px;
+div[class*="topSection"] {
+  [class*="tabBarContainer"] {
+    border: none;
+    padding-bottom: 5px;
+  }
+
+  [class*="tabBar"][role="tablist"] {
+    height: 40px;
+
+    [class*="tabBarItem"] {
+      margin: 0;
+      padding: 0 15px;
+      border-bottom: none;
+      border-radius: var(--ayu-border-radius);
+
+      &[aria-selected="true"] {
+        background-color: var(--background-secondary-alt);
+      }
     }
-
-    [class*=tabBar][role=tablist] {
-        height: 40px;
-
-        [class*=tabBarItem] {
-            margin: 0;
-            padding: 0 15px;
-            border-bottom: none;
-            border-radius: var(--ayu-border-radius);
-
-            &[aria-selected=true] {
-                background-color: var(--background-secondary-alt);
-            }
-        }
-    }
+  }
 }
 
 [class*="listScroller"] {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    align-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-content: flex-start;
 }
 
 [class*="listRow"][role="button"] {
-    width: 48%;
-    height: 50px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    background-color: var(--background-secondary-alt);
-    border-radius: var(--ayu-border-radius);
+  width: 48%;
+  height: 50px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  background-color: var(--background-secondary-alt);
+  border-radius: var(--ayu-border-radius);
 }
 
 [class*="listRow"][role="button"]:hover {
-    background-color: var(--background-modifier-hover);
+  background-color: var(--background-modifier-hover);
 }
 
 [class*="userInfoSection"] {
-    border: none !important;
+  border: none !important;
 }
 
-div[class*=userPopout] > div[class*=footer] {
-    padding: 0 12px 16px;
+div[class*="userPopout"] > div[class*="footer"] {
+  padding: 0 12px 16px;
 }
 
 [class*="note"] textarea {
-    background-color: var(--background-tertiary);
-    padding: 10px;
+  background-color: var(--background-tertiary);
+  padding: 10px;
 }
 
 [class*="userInfoSection"] [class*="connectedAccounts"] {
-    margin-top: -40px;
+  margin-top: -40px;
 }
 
-[class*="connectedAccounts"] [class*="connectedAccount"]:not([class*="connectedAccountName"]) {
-    border: none;
-    background-color: var(--background-secondary-alt);
-    border-radius: var(--ayu-border-radius);
+[class*="connectedAccounts"]
+  [class*="connectedAccount"]:not([class*="connectedAccountName"]) {
+  border: none;
+  background-color: var(--background-secondary-alt);
+  border-radius: var(--ayu-border-radius);
 }
 
 [class*="flowerStar"] > path {
-    fill: var(--background-accent);
+  fill: var(--background-accent);
 }
 
 [class*="additionalActionsIcon"] {
-    height: 32px;
-    width: 32px;
-    background-color: var(--background-accent);
-    border-radius: 3px;
-    transform: rotate(90deg);
+  height: 32px;
+  width: 32px;
+  background-color: var(--background-accent);
+  border-radius: 3px;
+  transform: rotate(90deg);
 }

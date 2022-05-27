@@ -3,9 +3,9 @@ Changes border radius-es on things like avatars, server icons
 */
 /* Embeds */
 [class*="embed"][class*="markup"] {
-    border-left-width: 5px;
-    border-radius: var(--ayu-border-radius) var(--ayu-embed-right-radius)
-        var(--ayu-embed-right-radius) var(--ayu-border-radius);
+  border-left-width: 5px;
+  border-radius: var(--ayu-border-radius) var(--ayu-embed-right-radius)
+    var(--ayu-embed-right-radius) var(--ayu-border-radius);
 }
 
 /* SECTION: All avatar stuff */
@@ -19,53 +19,53 @@ Changes border radius-es on things like avatars, server icons
 [class*="voiceAvatar"],
 [class*="speaking"],
 [role="dialog"] [class*="message"] [class*="avatar"] {
-    border-radius: var(--ayu-border-radius) !important;
+  border-radius: var(--ayu-border-radius) !important;
 }
 
 /* Member list avatars and typing dots */
 [class*="callAvatarMask"] foreignObject,
 [role="img"][aria-label] foreignObject,
 foreignObject[mask*="url(#svg-mask-voice-user-summary-item)"] {
-    -webkit-mask: none !important;
-    mask: none !important;
+  -webkit-mask: none !important;
+  mask: none !important;
 }
 [role="img"][aria-label] svg rect {
-    display: none;
+  display: none;
 }
 
 [class*="cursorDefault"],
 [class*="dots"] {
-    overflow: visible;
+  overflow: visible;
 }
 
 [class*="dots"] [cx="2.5"] {
-    cy: -8;
-    cx: -8.5;
-    color: var(--background-tertiary);
+  cy: -8;
+  cx: -8.5;
+  color: var(--background-tertiary);
 }
 [class*="dots"] [cx="8.75"] {
-    cy: -8;
-    cx: -2.25;
-    color: var(--background-tertiary);
+  cy: -8;
+  cx: -2.25;
+  color: var(--background-tertiary);
 }
 [class*="dots"] [cx="15"] {
-    cy: -8;
-    cx: 4;
-    color: var(--background-tertiary);
+  cy: -8;
+  cx: 4;
+  color: var(--background-tertiary);
 }
 
 [role="img"][aria-label]::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: var(--ayu-border-radius);
-    z-index: 20;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: var(--ayu-border-radius);
+  z-index: 20;
 }
 
 /* Overlay for setting new avatar */
 div[class*="editingContainer"] div[class*="overlay"] {
-    border-radius: var(--ayu-border-radius);
+  border-radius: var(--ayu-border-radius);
 }
 
 /* Statuses as shadows */
@@ -90,7 +90,7 @@ div[class*="editingContainer"] div[class*="overlay"] {
 [role="img"][aria-label*="オンライン"]::before,
 [role="img"][aria-label*="線上"]::before,
 [role="img"][aria-label*="온라인"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-online);
+  box-shadow: inset 0 0 0 1.5px var(--ayu-status-online);
 }
 
 [role="img"][aria-label*="Do Not Disturb"]::before,
@@ -121,7 +121,7 @@ div[class*="editingContainer"] div[class*="overlay"] {
 [role="img"][aria-label*="取り込み中"]::before,
 [role="img"][aria-label*="請勿打擾"]::before,
 [role="img"][aria-label*="다른 용무 중"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-dnd);
+  box-shadow: inset 0 0 0 1.5px var(--ayu-status-dnd);
 }
 
 [role="img"][aria-label*="Idle"]::before,
@@ -149,7 +149,7 @@ div[class*="editingContainer"] div[class*="overlay"] {
 [role="img"][aria-label*="退席中"]::before,
 [role="img"][aria-label*="閒置"]::before,
 [role="img"][aria-label*="자리비움"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-idle);
+  box-shadow: inset 0 0 0 1.5px var(--ayu-status-idle);
 }
 
 [role="img"][aria-label*="Streaming"]::before,
@@ -178,7 +178,7 @@ div[class*="editingContainer"] div[class*="overlay"] {
 [role="img"][aria-label*="配信"]::before,
 [role="img"][aria-label*="直播中"]::before,
 [role="img"][aria-label*="配信"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-streaming);
+  box-shadow: inset 0 0 0 1.5px var(--ayu-status-streaming);
 }
 
 [role="img"][aria-label*="Offline"]::before,
@@ -229,14 +229,14 @@ div[class*="editingContainer"] div[class*="overlay"] {
 [role="img"][aria-label*="オンライン状態を隠す"]::before,
 [role="img"][aria-label*="隱形"]::before,
 [role="img"][aria-label*="오프라인 표시"]::before {
-    box-shadow: inset 0 0 0 1.5px var(--ayu-status-offline);
+  box-shadow: inset 0 0 0 1.5px var(--ayu-status-offline);
 }
 
 /* userPopout hover mask */
 [class*="avatarHint"] foreignObject {
-    -webkit-mask: none !important;
-    mask: none !important;
-    border-radius: var(--ayu-border-radius) !important;
+  -webkit-mask: none !important;
+  mask: none !important;
+  border-radius: var(--ayu-border-radius) !important;
 }
 
 /* END SECTION: Avatars */
@@ -247,43 +247,43 @@ div[class*="wrapperSimple"],
 [class*="wrapper"] [class*="svg"] foreignObject,
 [data-ref-id*="guildsnav"] [class*="wrapper"] foreignObject,
 [data-ref-id*="guildsnav"] [class*="blobContainer"] foreignObject {
-    -webkit-mask: none !important;
-    mask: none !important;
-    border-radius: var(--ayu-border-radius) !important;
+  -webkit-mask: none !important;
+  mask: none !important;
+  border-radius: var(--ayu-border-radius) !important;
 }
 
 [class*="folderIconWrapper"] {
-    border-radius: var(--ayu-border-radius) !important;
+  border-radius: var(--ayu-border-radius) !important;
 }
 
 [class*="numberBadge"],
 [class*="iconBadge"] {
-    border-radius: var(--ayu-icon-badge-radius) !important;
+  border-radius: var(--ayu-icon-badge-radius) !important;
 }
 
 [data-ref-id*="guildsnav"] [class*="wrapper"] [class*="folder"] {
-    border-radius: var(--ayu-border-radius) !important;
+  border-radius: var(--ayu-border-radius) !important;
 }
 
 [class*="closedFolderIconWrapper"] div[class*="icon"] {
-    border-radius: calc(var(--ayu-border-radius) - 20%);
+  border-radius: calc(var(--ayu-border-radius) - 20%);
 }
 
 [class*="expandedFolderBackground"] {
-    border-radius: var(--ayu-border-radius) !important;
+  border-radius: var(--ayu-border-radius) !important;
 }
 
 /* END SECTION: Server List */
 
 [class*="bottomControls"] [class*="wrapper"] [class*="Button"] foreignObject {
-    mask: none !important;
+  mask: none !important;
 }
 
 [class*="userInfo"] {
-    overflow: unset;
-    margin-left: 5px;
+  overflow: unset;
+  margin-left: 5px;
 }
 
 div[class*="iconActiveMedium"] {
-    border-radius: var(--ayu-border-radius) !important;
+  border-radius: var(--ayu-border-radius) !important;
 }
