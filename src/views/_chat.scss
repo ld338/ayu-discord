@@ -10,7 +10,7 @@
 }
 
 [class*="guildSeparator"],
-[class*="childWrapper"] {
+ul[class*="tree"] svg [class*="childWrapper"] {
     background-color: var(--background-accent);
 }
 
@@ -92,27 +92,6 @@ div[class*="sidebar"] > section[class*="panels"] > [class*="container"] > [class
     flex-direction: row;
 }
 
-[id*="status-picker-switch-account"][class*="item"] {
-    padding: 0 8px;
-
-    div[class*="iconContainer"] {
-        margin-left: 0;
-    }
-}
-
-[class*="customEmojiPlaceholder"] {
-    background-image: var(--ayu-edit-icon);
-}
-
-[class*="statusItem"] > div[class*="description"],
-[class*="statusItem"] > div[class*="status"],
-[class*="menu"][class*="styleFixed"] > div[class*="scroller"] > div[class*="separator"] {
-    display: none;
-}
-
-[class*="clearStatusIcon"] {
-    margin-left: 0;
-}
 
 nav[class*="guilds"] ul[class*="tree"] {
     height: calc(100% - 160px);
@@ -126,32 +105,6 @@ nav[class*="guilds"] ul[class*="tree"] {
     bottom: 39px;
     padding: 20px;
     pointer-events: visible;
-}
-
-div[class^="customStatus"] > span[class*="customText"],
-div[class^="customStatus"] > img[class*="customEmoji"],
-section[class*="panels"] > div[class*="container"] > div[class*="nameTag"] {
-    display: none;
-}
-
-section[class*="panels"] > div[class*="container"] {
-    background-color: var(--background-secondary);
-    height: 0;
-}
-
-[class*="animatorTop"] > [class*="styleFixed"] > div[class*="scroller"] {
-    display: flex;
-    flex-direction: row;
-}
-
-div[class^="customStatus"][class*="statusItem"] {
-    grid-template-columns: none;
-}
-
-[class*="animatorTop"] > [class*="styleFixed"] > div[class*="scroller"] > [class*="item"] > [class*="statusItem"] {
-    grid-template-columns: none;
-    padding-left: 12px;
-    padding-right: 12px;
 }
 
 /* Top toolbar stuff */

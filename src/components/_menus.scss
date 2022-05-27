@@ -15,9 +15,14 @@
 
 div[class*="popout"] > div[class*="row"][role="button"]:hover,
 [class*="colorDefault"]:hover,
-[class*="colorDefault"]:active:not([class*="hideInteraction"]),
+[class*="colorDefault"]:active,
 [class*="colorDefault"][class*="focused"] {
     background-color: var(--ayu-menu-default);
+}
+
+// Override
+[class*="colorDefault"][class*="hideInteraction"] {
+    background-color: initial;
 }
 
 [id*="message-quickreact"] [class*="button"] {
