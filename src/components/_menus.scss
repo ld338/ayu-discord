@@ -15,7 +15,7 @@
 
 div[class*="popout"] > div[class*="row"][role="button"]:hover,
 [class*="colorDefault"]:hover,
-[class*="colorDefault"]:active,
+[class*="colorDefault"]:active:not([class*="hideInteraction"]),
 [class*="colorDefault"][class*="focused"] {
   background-color: var(--ayu-menu-default);
 }
