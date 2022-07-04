@@ -38,16 +38,6 @@ div[class*="giftCodeContainer"] > div[class*="tile"]:hover {
   background-color: var(--background-tertiary);
 }
 
-/* Voice Call stream watchers user hover */
-[class*="memberListItem"]:not([class*="popoutDisabled"]):hover {
-  background-color: var(--background-secondary) !important;
-}
-
-/* VC video loading background */
-[class*="videoWrapper"] {
-  background-color: var(--background-accent);
-}
-
 /* Border color for focused input boxes */
 textarea[class*="input"]:focus,
 input[class*="input"]:focus {

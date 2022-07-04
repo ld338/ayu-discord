@@ -154,3 +154,26 @@ div[class*="chat"] {
     }
   }
 }
+
+// Voice channels
+
+/* Voice Call stream watchers user hover */
+[class*="memberListItem"]:not([class*="popoutDisabled"]):hover {
+  background-color: var(--background-secondary) !important;
+}
+
+/* VC video loading background */
+[class*="videoWrapper"] {
+  background-color: var(--background-accent);
+}
+
+// Voice call main background
+div[class*="callContainer"] {
+  > div[class*="root"] {
+    background-color: var(--background-secondary-alt);
+
+    > div[class*="videoControls"] > div[class*="gradientContainer"] {
+      background-image: none;
+    }
+  }
+}
