@@ -12,12 +12,12 @@
 .theme-light,
 .theme-dark {
     /* Discord vars */
-    --background-primary: #0A0E14;
-    --background-secondary: #00010A;
+    --background-primary: #0D1016;
+    --background-secondary: #0A0E14;
     --background-secondary-alt: #000000;
     --background-tertiary: #00010A;
     --background-accent: #1B2733;
-    --background-floating: #0D1016;
+    --background-floating: #0A0E14;
 
     --channeltextarea-background: var(--background-accent);
     --channels-default: #B3B1AD;
