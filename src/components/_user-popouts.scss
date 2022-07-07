@@ -67,14 +67,9 @@ div[class*="userPopout"] > div[class*="footer"] {
   padding: 10px;
 }
 
-[class*="userInfoSection"] [class*="connectedAccounts"] {
-  margin-top: -40px;
-}
-
 [class*="connectedAccounts"]
   [class*="connectedAccount"]:not([class*="connectedAccountName"]) {
   border: none;
-  background-color: var(--background-secondary-alt);
   border-radius: var(--ayu-border-radius);
 }
 
