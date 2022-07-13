@@ -44,11 +44,6 @@ input[class*="input"]:focus {
   border-color: var(--ayu-notification-colour);
 }
 
-/* "Active Threads" modal */
-div[class*="focusLock"] [class*="root"] {
-  background-color: var(--background-floating);
-}
-
 /* Marks on sliders */
 div[class*="markDash"] {
   background-color: var(--background-accent) !important;
@@ -77,4 +72,9 @@ span[class*="codeBlockLang"] {
 // Event cards hover
 div[class*="eventCard"] div[class*="footer"] {
   background-color: transparent;
+}
+
+// Image galleries
+div[class*="focusLock"] > div[class*="carouselModal"] {
+  box-shadow: none;
 }
