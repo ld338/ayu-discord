@@ -72,46 +72,12 @@ div[class*="unreadMentionsIndicatorTop"] > div[class*="unreadMentionsBar"] {
   background-color: var(--ayu-notification-colour) !important;
 }
 
-/* Southwest user area */
-div[class*="sidebar"] > section[class*="panels"] > [class*="container"] {
-  > [class*="avatarWrapper"] {
-    > [class*="avatar"][class*="wrapper"] {
-      padding: 4px;
-    }
-
-    position: fixed;
-    bottom: 16px;
-    z-index: 1;
-    left: 13px;
-  }
-
-  height: 0;
-
-  > [class*="nameTag"] {
-    display: none;
-  }
-}
-
-[class*="animatorTop"] > [class*="styleFixed"] {
-  width: auto;
-  left: 50px;
-  bottom: -61.5px;
-  display: flex;
-  flex-direction: row;
-}
-
-nav[class*="guilds"] ul[class*="tree"] {
-  height: calc(100% - 160px);
-}
-
-[class*="container"] > [class*="flex"][style="flex: 0 1 auto;"] {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  left: 0;
-  bottom: 39px;
-  padding: 20px;
-  pointer-events: visible;
+// User profile popout (bottom left)
+div[class*="profileGroup"]
+  div[class*="profileBody"]
+  > div[class*="bodyInnerWrapper"],
+div[class*="sidebar"] > section[class*="panels"] {
+  background-color: transparent;
 }
 
 /* Top toolbar stuff */
