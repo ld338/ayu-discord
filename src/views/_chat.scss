@@ -121,6 +121,13 @@ div[class*="chat"] {
   }
 }
 
+div[class*="chatLayerWrapper"]
+  div[class*="messagesWrapper"]
+  ol[class*="scrollerInner"]
+  > div[class*="divider"] {
+  background-color: var(--background-secondary);
+}
+
 // Voice channels
 
 /* Voice Call stream watchers user hover */
