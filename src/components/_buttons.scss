@@ -105,6 +105,7 @@ div[class*="channelTextArea"]
 }
 
 // User profile buttons
-button[class*="actionColor"] {
+button[class*="actionColor"],
+div[class*="activityUserPopout"] > div > button[class*="buttonColor"] {
   background-color: var(--ayu-button-default) !important;
 }
