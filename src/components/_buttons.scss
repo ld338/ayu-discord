@@ -103,3 +103,8 @@ div[class*="channelTextArea"]
     }
   }
 }
+
+// User profile buttons
+button[class*="actionColor"] {
+  background-color: var(--ayu-button-default) !important;
+}
