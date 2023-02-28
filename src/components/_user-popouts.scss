@@ -52,6 +52,12 @@ div[class*="userProfileOuter"] {
       padding: 10px;
       align-content: flex-start;
     }
+
+    div[class*="tabBarContainer"]
+      div[class*="tabBar"][role="tablist"]
+      div[class*="tabBarItem"][aria-selected="true"] {
+      background-color: var(--background-secondary-alt);
+    }
   }
 
   // Styles to apply to panel views
@@ -89,47 +95,14 @@ div[class*="userProfileOuter"] {
       height: 40px;
 
       div[class*="tabBarItem"] {
+        display: flex;
+        align-items: center;
+
         margin: 0;
         padding: 0 15px;
         border-bottom: none;
         border-radius: var(--ayu-border-radius);
-
-        &[aria-selected="true"] {
-          background-color: var(--background-secondary-alt);
-        }
       }
     }
   }
 }
-
-// [class*="listRow"][role="button"] {
-//   width: 48%;
-//   height: 50px;
-//   margin-bottom: 10px;
-//   box-sizing: border-box;
-//   border-radius: var(--ayu-border-radius);
-//   background-color: var(--background-secondary-alt);
-// }
-
-// [class*="listRow"][role="button"]:hover {
-//   background-color: var(--background-modifier-hover);
-// }
-
-// div[class*="userPopout"] > div[class*="footer"] {
-//   padding: 0 12px 16px;
-// }
-
-// [class*="note"] textarea {
-//   background-color: var(--background-tertiary);
-//   padding: 10px;
-// }
-
-// [class*="connectedAccounts"]
-//   [class*="connectedAccount"]:not([class*="connectedAccountName"]) {
-//   border: none;
-//   border-radius: var(--ayu-border-radius);
-// }
-
-// [class*="flowerStar"] > path {
-//   fill: var(--background-accent);
-// }
