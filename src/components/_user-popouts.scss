@@ -62,7 +62,7 @@ div[class*="userProfileOuter"] {
 
   // Styles to apply to panel views
   &[class*="userPanelOuter"] {
-    div[class*="listRow"][row="button"] {
+    div[class*="listRow"][role="button"] {
       padding: 5px;
       margin-bottom: 5px;
       border-radius: var(--ayu-border-radius);
