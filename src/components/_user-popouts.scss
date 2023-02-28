@@ -11,36 +11,6 @@
   background-color: unset;
 }
 
-/* LARGE POPOUTS */
-div[class*="topSection"] {
-  [class*="tabBarContainer"] {
-    border: none;
-    padding-bottom: 5px;
-  }
-
-  [class*="tabBar"][role="tablist"] {
-    height: 40px;
-
-    [class*="tabBarItem"] {
-      margin: 0;
-      padding: 0 15px;
-      border-bottom: none;
-      border-radius: var(--ayu-border-radius);
-
-      &[aria-selected="true"] {
-        background-color: var(--background-secondary-alt);
-      }
-    }
-  }
-}
-
-[class*="listScroller"] {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 10px;
-  align-content: flex-start;
-}
-
 // Large user popout (also applies to side panel in DMs)
 div[class*="userProfileOuter"] {
   // Styles to apply to unthemed profiles
@@ -75,6 +45,22 @@ div[class*="userProfileOuter"] {
       border-radius: 3px;
       transform: rotate(90deg);
     }
+
+    div[class*="listScroller"] {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px;
+      align-content: flex-start;
+    }
+  }
+
+  // Styles to apply to panel views
+  &[class*="userPanelOuter"] {
+    div[class*="listRow"][row="button"] {
+      padding: 5px;
+      margin-bottom: 5px;
+      border-radius: var(--ayu-border-radius);
+    }
   }
 
   // User note styles
@@ -89,8 +75,29 @@ div[class*="userProfileOuter"] {
       border-radius: var(--ayu-border-radius);
     }
 
-    svg[class*=flowerStar] > path {
+    svg[class*="flowerStar"] > path {
       fill: var(--background-accent);
+    }
+  }
+
+  // Tabs
+  div[class*="tabBarContainer"] {
+    border: none;
+    padding-bottom: 5px;
+
+    div[class*="tabBar"][role="tablist"] {
+      height: 40px;
+
+      div[class*="tabBarItem"] {
+        margin: 0;
+        padding: 0 15px;
+        border-bottom: none;
+        border-radius: var(--ayu-border-radius);
+
+        &[aria-selected="true"] {
+          background-color: var(--background-secondary-alt);
+        }
+      }
     }
   }
 }
@@ -126,5 +133,3 @@ div[class*="userProfileOuter"] {
 // [class*="flowerStar"] > path {
 //   fill: var(--background-accent);
 // }
-
-
