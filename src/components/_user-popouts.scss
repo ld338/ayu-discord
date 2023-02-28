@@ -26,6 +26,12 @@ div[class*="userProfileOuter"] {
     div[class*="note"] textarea {
       background-color: var(--background-tertiary);
     }
+
+    div[class*="tabBarContainer"]
+      div[class*="tabBar"][role="tablist"]
+      div[class*="tabBarItem"][aria-selected="true"] {
+      background-color: var(--background-secondary-alt);
+    }
   }
 
   // Styles to apply to non-panel views
@@ -51,12 +57,6 @@ div[class*="userProfileOuter"] {
       flex-wrap: wrap;
       padding: 10px;
       align-content: flex-start;
-    }
-
-    div[class*="tabBarContainer"]
-      div[class*="tabBar"][role="tablist"]
-      div[class*="tabBarItem"][aria-selected="true"] {
-      background-color: var(--background-secondary-alt);
     }
   }
 
