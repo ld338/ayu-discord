@@ -102,6 +102,10 @@ div[class*="userProfileOuter"] {
         padding: 0 15px;
         border-bottom: none;
         border-radius: var(--ayu-border-radius);
+
+        &[aria-selected="true"] {
+          font-weight: bolder;
+        }
       }
     }
   }
