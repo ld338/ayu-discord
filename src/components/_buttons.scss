@@ -10,7 +10,9 @@ div[class*="premiumTabItem"][class*="selected"],
 [class*="radioGroup"]
   [class*="cardPrimaryEditable"][style*="rgb(114, 137, 218)"],
 [class*="valueChecked"],
-button[class*="lookFilled"][class*="colorBrand"]:not(button[class*="customSwatch"]) {
+button[class*="lookFilled"][class*="colorBrand"]:not(
+    button[class*="customSwatch"]
+  ) {
   background-color: var(--ayu-button-default) !important;
 }
 
@@ -32,7 +34,7 @@ div[aria-controls="add_friend-tab"] {
 /* Toggle sliders */
 div[class*="control"] > {
   div[class*="container"] {
-    &:not([style*="* 4.6%"]) {
+    &[class*="checked"] {
       background-color: var(--ayu-button-positive) !important;
 
       > svg[class*="slider"] > svg > path {
@@ -40,7 +42,7 @@ div[class*="control"] > {
       }
     }
 
-    &[style*="* 4.6%"] {
+    &:not([class*="checked"]) {
       background-color: var(--background-accent) !important;
 
       > svg[class*="slider"] > svg > path {
