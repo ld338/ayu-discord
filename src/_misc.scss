@@ -78,3 +78,8 @@ div[class*="eventCard"] div[class*="footer"] {
 div[class*="focusLock"] > div[class*="carouselModal"] {
   box-shadow: none;
 }
+
+// App directory modal background color
+div[class*="directoryModal"] {
+  background-color: var(--background-primary);
+}
