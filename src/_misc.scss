@@ -81,5 +81,5 @@ div[class*="focusLock"] > div[class*="carouselModal"] {
 
 // App directory modal background color
 div[class*="directoryModal"] {
-  background-color: var(--background-primary);
+  background-color: var(--background-primary) !important;
 }
