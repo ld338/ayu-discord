@@ -41,3 +41,8 @@ div[class*="popout"] > div[class*="row"][role="button"]:hover,
 div[class*="selectOption"]:hover {
   background-color: var(--background-modifier-hover);
 }
+
+// Message context menu - hide super reactions button
+div[role="group"] > div[class*="colorPremiumGradient"][class*="item"] {
+  display: none;
+}
