@@ -59,7 +59,8 @@ div[class*="keybindShortcut"] span {
 }
 
 // Remove orphaned gradient
-section[class*="title"] div[class*="children"]::after {
+section[class*="title"] div[class*="children"]::after,
+section[class*="header"] div[class*="innerHeader"]::after {
   background: none !important;
 }
 

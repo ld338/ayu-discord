@@ -48,6 +48,14 @@ div[role="group"] > div[class*="colorPremiumGradient"][class*="item"] {
 }
 
 // Server "Channels & Roles" tab
-div[class*=chat][class*=scrollerContainer] {
+div[class*="chat"] > div[class*="container"] {
   background-color: var(--background-secondary);
+
+  div[class*="tabBar"] {
+    border-bottom-color: var(--background-accent);
+  }
+}
+
+div[class*="chat"][class*="scrollerContainer"] {
+  background-color: var(--background-secondary-alt);
 }
