@@ -46,3 +46,8 @@ div[class*="selectOption"]:hover {
 div[role="group"] > div[class*="colorPremiumGradient"][class*="item"] {
   display: none;
 }
+
+// Server "Channels & Roles" tab
+div[class*=chat][class*=scrollerContainer] {
+  background-color: var(--background-secondary);
+}
