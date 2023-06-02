@@ -8,6 +8,9 @@
 /* Lurker Input Bar (Hides the input bar when you aren't hovering it to prevent accidentally triggering typing) */
 /* @import url(https://sardonicism-04.github.io/ayu-discord/extensions/lurker-input.css); */
 
+/* Floating Sidebar (The sidebar floats and hides itself when not active) */
+/* @import url(https://sardonicism-04.github.io/ayu-discord/extensions/floating-sidebar.css); */
+
 /* Declares variables used within the theme and all */
 .theme-light,
 .theme-dark {
