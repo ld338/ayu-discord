@@ -6,6 +6,8 @@ div[class*=base] > div[class*=content] > div[class*=sidebar] {
     align-self: center;
     height: 75%;
     margin-left: 1%;
+
+    transition-duration: 0.4s;
 }
 
 div[class*=base] > div[class*=content] > div[class*=sidebar]:not(:hover) {
@@ -14,6 +16,8 @@ div[class*=base] > div[class*=content] > div[class*=sidebar]:not(:hover) {
 
     align-items: center;
     justify-content: center;
+
+    transition-duration: 0.4s;
 }
 
 div[class*=base] > div[class*=content] > div[class*=sidebar]:not(:hover) * {
