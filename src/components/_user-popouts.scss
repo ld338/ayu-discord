@@ -110,3 +110,13 @@ div[class*="userProfileOuter"] {
     }
   }
 }
+
+div[class*=usernameSection] > div > div[class*=userText] > div[class*=userTag]::before {
+  content: "@";
+  color: var(--header-primary);
+}
+
+div[class*=container] > div > div[class*=nameTag]::before {
+  content: "@";
+  color: var(--text-normal);
+}
