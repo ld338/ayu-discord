@@ -116,7 +116,7 @@ div[class*=usernameSection] > div > div[class*=userText] > div[class*=userTag]::
   color: var(--header-primary);
 }
 
-div[class*=container] > div > div[class*=nameTag]::before {
+div[class*=container] > div > div[class*=nameTag]:not([class*=canCopy])::before {
   content: "@";
   color: var(--text-normal);
 }
