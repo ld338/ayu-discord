@@ -111,7 +111,8 @@ div[class*="userProfileOuter"] {
   }
 }
 
-div[class*=usernameSection] > div > div[class*=userText] > div[class*=userTag]::before {
+div[class*=usernameSection] > div > div[class*=userText] > div[class*=userTag]::before,
+div[class*=section] > div > div[class*=userText] > div[class*=userTag]::before {
   content: "@";
   color: var(--header-primary);
 }
