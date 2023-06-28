@@ -44,7 +44,7 @@ img[class*="replyAvatar"] {
 }
 
 /* Spoilered stuff */
-[class*="spoilerText"] {
+[class*="spoilerContent"] {
   &[class*="hidden"] {
     background-color: var(--background-tertiary) !important;
   }
