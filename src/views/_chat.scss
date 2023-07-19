@@ -102,12 +102,12 @@ div[class*="toolbar"] > {
   }
 }
 
-// Forum channels
+// Forum channels and"Browse Channels" tab
 div[class*="chat"] {
   $content: "> div[class*=content]";
 
   #{$content} > div[class*="container"] {
-    background-color: var(--background-secondary);
+    background-color: var(--background-tertiary);
 
     div[class*="postBody"] div[class*="textContentFooter"] {
       display: none;

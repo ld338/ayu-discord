@@ -56,6 +56,7 @@ div[class*="chat"] > div[class*="container"] {
   }
 }
 
+// Channels and Roles "Customize" tab
 div[class*="chat"][class*="scrollerContainer"] {
-  background-color: var(--background-secondary-alt);
+  background-color: var(--background-tertiary);
 }
