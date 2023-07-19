@@ -45,6 +45,7 @@
     --background-modifier-hover: #8A91992d;
     --background-modifier-active: #8A919949;
     --background-modifier-selected: #8A91995d;
+    --background-modifier-accent: var(--background-accent);
 
     --activity-card-background: var(--background-tertiary);
     --home-background: var(--background-tertiary);
