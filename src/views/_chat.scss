@@ -162,3 +162,8 @@ aside[class*="membersWrap"] > div[class*="members"] {
     background: none;
   }
 }
+
+// Unread message separator
+div[class*="divider"][class*="isUnread"] {
+  --divider-color: var(--ayu-negative);
+}
