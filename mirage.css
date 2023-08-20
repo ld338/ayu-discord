@@ -49,6 +49,7 @@
 
     --activity-card-background: var(--background-tertiary);
     --home-background: var(--background-tertiary);
+    --modal-background: var(--background-floating);
 
     /* Ayu theme-specific vars */
     --ayu-positive: #a6cc70;
