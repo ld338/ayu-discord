@@ -84,3 +84,8 @@ div[class*="focusLock"] > div[class*="carouselModal"] {
 div[class*="directoryModal"] {
   background-color: var(--background-primary) !important;
 }
+
+// Nitro modal header background needs to be hidden to show the animation
+div[class*="headerBackground"] > div[class*="header"][class*="horizontal"] {
+  background: none !important;
+}
