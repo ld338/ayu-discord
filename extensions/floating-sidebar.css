@@ -34,3 +34,8 @@ div[class*=base] > div[class*=content] > div[class*=sidebar]:not(:hover)::before
     border-top: 0.375em double var(--text-normal);
     border-bottom: 0.125em solid var(--text-normal);
 }
+
+/* Hide the channel buttons to provide more space for the text input bar */
+div[class*=channelTextArea] > div[class*=scrollableContainer] div[class*=buttons] {
+    display: none !important;
+}
