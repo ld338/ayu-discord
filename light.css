@@ -12,8 +12,7 @@
 /* @import url(https://sardonicism-04.github.io/ayu-discord/extensions/floating-sidebar.css); */
 
 /* Declares variables used within the theme and all */
-.theme-light,
-.theme-dark {
+.theme-light {
     /* Discord vars */
     --background-primary: #FAFAFA;
     --background-secondary: #eff0f1;
@@ -110,7 +109,7 @@
 html.theme-dark::before {
     content: "This theme is made to be used with Discord's light theme. Please switch to that for the best experience.";
     font-family: Whitney, Helvetica Neue, Helvetica, Arial, sans-serif;
-    color: var(--ayu-negative);
+    color: red;
     text-align: center;
     position: absolute;
     z-index: 10001;
