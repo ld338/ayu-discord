@@ -49,3 +49,19 @@
 div[class*="guildPopout"] > div[class*="body"] {
   background-color: var(--background-floating);
 }
+
+// App Launcher popup
+div[class*="drawerSizingWrapper"]
+  > div[class*="contentWrapper"]
+  > div[class*="container"] {
+  background-color: var(--background-floating);
+
+  ul[class*="commandList"] > li[class*="command"] {
+    background-color: var(--background-primary);
+  }
+
+  div[class*="contentContainer"] > ul > li[class*="command"]:hover,
+  ul[class*="applicationList"] > li[class*="application"]:hover {
+    background-color: var(--background-modifier-hover);
+  }
+}
