@@ -53,3 +53,21 @@ img[class*="replyAvatar"] {
     background-color: var(--background-modifier-hover) !important;
   }
 }
+
+// Poll messages
+div[class*="message"] div[class*="pollContainer"] {
+  background-color: var(--background-secondary);
+
+  li[class*="answer"] {
+    div[class*="answerInner"] {
+      background-color: var(--background-accent);
+    }
+
+    &[class*="votedStyles"]
+      div[class*="answerInner"]
+      svg[class*="answerSelectionIcon"]
+      > path {
+      fill: var(--ayu-button-default) !important;
+    }
+  }
+}
